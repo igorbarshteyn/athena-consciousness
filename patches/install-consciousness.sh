@@ -4,7 +4,7 @@ set -Eeuo pipefail
 
 OVERLAY="$(cd -- "$(dirname -- "$(readlink -f -- "${BASH_SOURCE[0]}")")/.." && pwd)"
 ATHENA=""; MODE=install; DO_BUILD=1; DO_LAUNCHER=0; ORT=""; JOBS=4; ALLOW_DRIFT=0
-CPU=0; CUDA_ARCH='120a;86'; DRY_RUN=0
+CPU=0; CUDA_ARCH='120a;86'; DRY_RUN=0; DO_VISION_MODEL=1
 usage() {
     cat <<'HELP'
 Athena R26.1 overlay for an already installed stock Athena checkout
@@ -17,17 +17,25 @@ Usage: ./install-overlay.sh --athena DIR [options]
   --cuda-arch LIST   CMake CUDA architectures (default: 120a;86).
   --cpu             CPU-only development/verification build.
   --launcher        Also replace the root launcher; review its settings first.
+  --vision-model-only
+                    Install/verify the matching Qwen3.5-397B vision projector
+                    only; do not copy sources or rebuild applications.
+  --skip-vision-model
+                    Do not download/check the default projector (offline,
+                    custom-model or deliberately non-vision installations).
   --dry-run         Preflight and list destinations; change nothing.
   --skip-build      Copy and verify sources only; NOT ready to launch.
   --check-sources   Verify installed sources only; change nothing.
-  --check           Verify sources, binary freshness, linkage and speech protocol.
+  --check           Verify sources, binaries, speech protocol and projector.
   --allow-drift     Permit an untested dependency; compatibility is not assured.
   -h, --help        Show this help.
 
 Stop Athena before installing or restoring. The installer preserves a source
 backup and, for a full build, both old build directories. On failure, use the
 printed restore.sh command. Stock install.sh is never invoked or overwritten.
-Models, personal memory, desktop entries and the llama.cpp server are untouched.
+Full installs fetch the missing, checksum-pinned vision projector (~922 MB).
+Existing models are never overwritten. Source-only/check/dry-run modes never
+download. Personal memory, desktop entries and the llama.cpp server are untouched.
 HELP
 }
 while [ $# -gt 0 ]; do
@@ -37,9 +45,10 @@ while [ $# -gt 0 ]; do
     esac
     case "$1" in
         --athena) ATHENA="$2"; shift 2 ;;
-        --check|--check-sources)
-            [ "$MODE" = install ] || { echo 'choose one check mode' >&2; exit 2; }
+        --check|--check-sources|--vision-model-only)
+            [ "$MODE" = install ] || { echo 'choose one operation mode' >&2; exit 2; }
             MODE="${1#--}"; shift ;;
+        --skip-vision-model) DO_VISION_MODEL=0; shift ;;
         --dry-run) DRY_RUN=1; shift ;;
         --cpu) CPU=1; shift ;;
         --cuda-arch) CUDA_ARCH="$2"; shift 2 ;;
@@ -55,8 +64,11 @@ done
 [ -n "$ATHENA" ] || { echo "install-consciousness: --athena /abs/path/to/athena is required" >&2; exit 2; }
 [[ "$JOBS" =~ ^[1-9][0-9]{0,3}$ ]] || { echo "install-consciousness: --jobs needs a positive integer" >&2; exit 2; }
 [[ "$CUDA_ARCH" =~ ^[A-Za-z0-9_.+-]+(\;[A-Za-z0-9_.+-]+)*$ ]] || { echo 'invalid --cuda-arch list' >&2; exit 2; }
-if [ "$MODE" != install ] && { [ "$DO_BUILD" = 0 ] || [ "$DRY_RUN" = 1 ]; }; then
+if [[ "$MODE" == check* ]] && { [ "$DO_BUILD" = 0 ] || [ "$DRY_RUN" = 1 ]; }; then
     echo '--check/--check-sources cannot be combined with --skip-build or --dry-run' >&2; exit 2
+fi
+if [ "$MODE" = vision-model-only ] && { [ "$DO_VISION_MODEL" = 0 ] || [ "$DO_BUILD" = 0 ] || [ "$DO_LAUNCHER" = 1 ]; }; then
+    echo '--vision-model-only cannot be combined with --skip-vision-model, --skip-build or --launcher' >&2; exit 2
 fi
 ATHENA="$(cd -- "$ATHENA" && pwd -P)"
 [[ "$OVERLAY/" != "$ATHENA/"* && "$ATHENA/" != "$OVERLAY/"* ]] || { echo "install-consciousness: use separate, non-nested overlay and Athena directories" >&2; exit 2; }
@@ -67,6 +79,68 @@ ok()   { printf '  ok    %s\n' "$*"; }
 bad()  { printf '  FAIL  %s\n' "$*" >&2; fail_n=$((fail_n+1)); }
 warn() { printf '  warn  %s\n' "$*" >&2; }
 die()  { printf 'install-consciousness: %s\n' "$*" >&2; exit 1; }
+
+# The supplied launcher uses this projector with Qwen3.5-397B-A17B. Pin both
+# the immutable publisher revision and its Git LFS SHA-256, not mutable main.
+# Do not infer compatibility from the generic filename or GGUF magic alone.
+vision_model() (
+    action="$1"
+    revision=da33c16fa4440f831149fcf53b98a22bc07785e5
+    expected_sha=b3624272d7b9b49ffe6c6d0c592980bed6b026ce59cde11708bb230395c2a227
+    expected_size=921705184
+    url="https://huggingface.co/unsloth/Qwen3.5-397B-A17B-GGUF/resolve/$revision/mmproj-BF16.gguf"
+    dest="$ATHENA/models/mmproj-BF16.gguf"
+    # A hash-specific partial cannot accidentally resume another release.
+    partial="$dest.${expected_sha:0:12}.part"
+    [ ! -L "$ATHENA/models" ] || die "models directory is a symlink; use --skip-vision-model and manage your projector separately"
+    [ ! -e "$ATHENA/models" ] || [ -d "$ATHENA/models" ] || die "models is not a directory"
+    for path in "$dest" "$partial"; do
+        [ ! -L "$path" ] || die "projector path is a symlink (left untouched): $path"
+        [ ! -e "$path" ] || [ -f "$path" ] || die "projector path is not a regular file: $path"
+    done
+    command -v sha256sum >/dev/null || die "sha256sum is required to verify the vision projector"
+    verify_projector() {
+        [ "$(stat -c %s -- "$1")" = "$expected_size" ] || return 1
+        # Read on stdin so unusual checkout names cannot escape checksum output.
+        digest="$(sha256sum < "$1")" || return 1
+        [ "${digest%% *}" = "$expected_sha" ]
+    }
+    if [ -f "$dest" ]; then
+        verify_projector "$dest" || die "existing projector does not match the pinned Qwen3.5-397B BF16 model; left untouched: $dest. Move it aside yourself to fetch this model, or use --skip-vision-model for a custom setup"
+        ok "vision projector present; size and SHA-256 verified (no download)"
+        exit 0
+    fi
+    [ "$action" != check ] || die "vision projector missing: $dest; run --vision-model-only (or --skip-vision-model for a custom/non-vision setup)"
+    have=0
+    if [ -f "$partial" ]; then
+        [ "$(stat -c %h -- "$partial")" = 1 ] || die "refusing to write a hard-linked projector partial: $partial"
+        have="$(stat -c %s -- "$partial")"
+        [ "$have" -le "$expected_size" ] || die "projector partial is oversized; left untouched: $partial. Move it aside before retrying"
+    fi
+    if [ "$action" = preview ]; then
+        printf '  vision  %s -> %s (%s bytes; resume from %s; SHA-256 verified before use)\n' "$url" "$dest" "$expected_size" "$have"
+        exit 0
+    fi
+    if [ "$have" -lt "$expected_size" ]; then
+        command -v curl >/dev/null || die "curl is required to download the missing vision projector (or use --skip-vision-model)"
+        mkdir -p -- "$ATHENA/models"
+        printf '  vision  downloading/resuming Qwen3.5-397B BF16 projector (%s / %s bytes)\n' "$have" "$expected_size"
+        # Never expose an incomplete download under the filename the launcher
+        # loads. TLS, HTTP failure handling and the pinned digest reject error
+        # pages, truncation and wrong-model responses. Re-run after interruption.
+        curl -q --fail --location --proto '=https' --proto-redir '=https' \
+            --connect-timeout 30 --speed-limit 1024 --speed-time 60 \
+            --retry 3 --retry-delay 2 --continue-at - --output "$partial" "$url" \
+            || die "vision download failed; sources/builds are unchanged. Partial retained at $partial; re-run to resume"
+    fi
+    verify_projector "$partial" || die "projector size/SHA-256 verification failed; not installed. Partial retained at $partial; re-run to resume if incomplete, or move it aside if corrupt"
+    # Atomic, no-clobber publication on the same filesystem. Even a file
+    # created concurrently by an external process is never overwritten.
+    chmod 644 -- "$partial"
+    ln -T -- "$partial" "$dest" || die "cannot publish projector without overwriting $dest; verified partial retained at $partial"
+    rm -- "$partial"
+    ok "vision projector installed; size and SHA-256 verified: $dest"
+)
 
 # Serialize installs/checks/rollbacks without leaving a file in read-only modes.
 command -v flock >/dev/null || die "flock is required"
@@ -80,6 +154,10 @@ flock -n "$install_lock" || die "another overlay operation is using $ATHENA"
     || die "$ATHENA/whisper.cpp is not cloned yet; finish the stock Athena installation first"
 [ -f "$ATHENA/whisper.cpp/CMakeLists.txt" ] && [ -f "$ATHENA/orpheus/CMakeLists.txt" ] \
     || die "base build definitions are missing; finish the stock Athena installation first"
+if [ "$MODE" = vision-model-only ]; then
+    if [ "$DRY_RUN" = 1 ]; then vision_model preview; else vision_model install; fi
+    exit 0
+fi
 [ ! -L "$OVERLAY/patches" ] || die "overlay patches must be a real directory"
 [ -f "$OVERLAY/patches/talk-llama/talk-llama.cpp" ] && [ -f "$OVERLAY/patches/whisper-common/common-sdl.h" ] \
     || die "$OVERLAY does not look like the extracted overlay"
@@ -173,11 +251,15 @@ if [ "$MODE" = install ] && [ "$fail_n" = 0 ]; then
         command -v setsid >/dev/null || die "the supervised launcher needs setsid; nothing copied"
     fi
     if [ "$DRY_RUN" = 1 ]; then
+        if [ "$DO_BUILD" = 1 ] && [ "$DO_VISION_MODEL" = 1 ]; then vision_model preview; fi
         for i in "${!SOURCE_ROOTS[@]}"; do printf '  %s/ -> %s/ (recursive)\n' "${SOURCE_ROOTS[$i]}" "${DEST_ROOTS[$i]}"; done
         for i in "${!SOURCE_FILES[@]}"; do printf '  %s -> %s\n' "${SOURCE_FILES[$i]}" "${DEST_FILES[$i]}"; done
         printf 'Preflight passed; rebuild=%s launcher=%s CPU=%s. Nothing changed.\n' "$DO_BUILD" "$DO_LAUNCHER" "$CPU"
         exit 0
     fi
+    # Fetch/verify before touching sources or builds. Model weights are not
+    # part of the source rollback; a verified new projector can be kept.
+    if [ "$DO_BUILD" = 1 ] && [ "$DO_VISION_MODEL" = 1 ]; then vision_model install; fi
     cd "$ATHENA"
     # Save the ACTUAL build sources too: local changes in examples/talk-llama
     # need not match patches/. Record absent paths so rollback removes additions.
@@ -318,6 +400,11 @@ if [ -f ./launch-athena-397b.sh ]; then
     if grep -qs 'ATHENA_SHUTDOWN_WAIT_PROGRESS' ./launch-athena-397b.sh; then ok "launcher: progress-aware shutdown supervision is present"
     elif grep -qs 'ATHENA_LAUNCH_SUPERVISE' ./launch-athena-397b.sh; then warn "launcher: shutdown has a fixed limit; review the supplied launcher supervision (--launcher)"
     else warn "launcher: stock foreground supervision; review the supplied launcher before live use"; fi
+fi
+if [ "$MODE" = check ] && [ "$DO_VISION_MODEL" = 1 ]; then
+    vision_model check || bad "vision projector check failed"
+elif [ "$DO_VISION_MODEL" = 0 ]; then
+    warn "default vision projector not checked (--skip-vision-model); verify your model/launcher separately"
 fi
 
 echo
