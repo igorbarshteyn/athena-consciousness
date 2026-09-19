@@ -124,7 +124,9 @@ it persistently:
 
 ```bash
 cd /absolute/path/to/athena
-ATHENA_R26=1 ATHENA_INITIATIVE_POLICY=sustained ./launch-athena-397b.sh
+ATHENA_R26=1 ATHENA_INITIATIVE_POLICY=sustained ATHENA_DREAM_AFTER_S=420 \
+ATHENA_MIND_DEBUG=1 ATHENA_FIELD_VERBOSITY=1.0 ATHENA_MIND_TRACE_S=2 \
+GGML_CUDA_NO_PINNED=1 ATHENA_MPS=1 ./launch-athena-397b.sh
 ```
 
 For a desktop launch, put these exports in your own launch wrapper or environment
