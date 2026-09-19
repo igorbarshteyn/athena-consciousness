@@ -26,9 +26,10 @@ does not alter their behavior.
 | `patches/launch-athena-397b.sh` | Optional supervised launcher; review its model, audio and GPU settings. |
 | `patches/athena-vision-check.sh` | Camera/model diagnostic helper. |
 | `patches/install-consciousness.sh` | Installer implementation; also accepts the documented options directly. |
+| `patches/tests/test_install_vision_model.py` | Network-free installer regression tests; not copied into the base. |
 
-Historical reports, test workspaces, transcripts, sample memory, release archives
-and development tools are not part of this overlay repository. The changelog is
+Historical reports, test workspaces, transcripts, sample memory and release archives
+are not part of this overlay repository. The changelog is
 a historical record; use this README for installation.
 
 ## Prerequisites
@@ -36,8 +37,10 @@ a historical record; use this README for installation.
 Use the existing Linux/Bash Athena installation and its working compiler, CMake,
 SDL2/libcurl development packages, CUDA toolkit, ONNX Runtime, models and GPU
 drivers. The script also uses the usual GNU file utilities, Git, `flock` and
-`timeout`; the optional launcher requires `setsid`. It installs no packages,
-downloads nothing, and requests no `sudo` access.
+`timeout`; the optional launcher requires `setsid`. Full installs also use `curl`
+and `sha256sum` to fetch and verify the missing vision projector (about 922 MB).
+It installs no packages and requests no `sudo` access. Other models must already
+be installed by the base installer or provided separately.
 
 The tested base is [Athena commit
 `e747c0362c4e1c3b95756a57154d09b8df7811ce`](https://github.com/igorbarshteyn/athena/commit/e747c0362c4e1c3b95756a57154d09b8df7811ce).
@@ -65,7 +68,7 @@ cd /absolute/path/to/athena-consciousness-r26.1-overlay
 # Preview the complete installation without changing Athena.
 ./install-overlay.sh --athena ../athena --dry-run
 
-# Install sources and rebuild the brain, calibrator and speech engine.
+# Install the missing vision projector and sources; rebuild all three applications.
 ./install-overlay.sh --athena ../athena --jobs 4
 
 # Independently check the installed files and applications.
@@ -93,6 +96,43 @@ builds alongside the retained backup.
 The script prints a backup directory and its `restore.sh` command before copying.
 Keep that directory. On any failed installation or check, stop and use the error
 and rollback instructions before launching Athena.
+
+### Vision projector
+
+The base installer does not fetch the camera's multimodal projector. A normal
+overlay installation downloads `models/mmproj-BF16.gguf` for the supplied
+**Qwen3.5-397B-A17B** launcher from
+[Unsloth's matching model repository](https://huggingface.co/unsloth/Qwen3.5-397B-A17B-GGUF/blob/da33c16fa4440f831149fcf53b98a22bc07785e5/mmproj-BF16.gguf).
+The download is pinned to publisher revision
+`da33c16fa4440f831149fcf53b98a22bc07785e5`, size **921,705,184 bytes**,
+and SHA-256
+`b3624272d7b9b49ffe6c6d0c592980bed6b026ce59cde11708bb230395c2a227`.
+
+For an already installed overlay, add or verify just this model without copying
+sources, changing the launcher or rebuilding:
+
+```bash
+./install-overlay.sh --athena ../athena --vision-model-only
+```
+
+A matching existing file is verified locally and reused without any network
+request. Downloads resume from a hash-specific `.part` file and become visible
+under the launcher's filename only after size and checksum verification. A
+failed download leaves sources and builds unchanged; rerun the command to resume.
+An existing mismatched projector is **never overwritten**: move it aside yourself
+if it is corrupt, or keep it and use `--skip-vision-model` for a custom setup.
+An oversized or full-sized corrupt partial must likewise be moved aside before
+retrying; its exact path is printed. Model-directory/file symlinks are not followed.
+
+For an offline, custom-model or deliberately non-vision installation, pass
+`--skip-vision-model` to both install and `--check`. Other language-model variants
+need their own matching projector; a shared `mmproj-BF16.gguf` filename does not
+prove compatibility. Custom model paths and `--mmproj` settings remain your
+responsibility. `--skip-build` and `--check-sources` remain source-only and never
+download or verify model weights. All dry-run and check modes are network-free;
+`--check` verifies this projector unless explicitly skipped. Downloading it does
+not enable a camera, grant camera permission or change your existing launcher;
+the launcher must actually pass `--mmproj` (as the supplied launcher does).
 
 ### Choose the launcher
 
@@ -153,9 +193,11 @@ All destinations below are relative to the **stock Athena root**:
 | `patches/orpheus/` | `patches/orpheus/` and `orpheus/`. Stock `orpheus/CMakeLists.txt` stays in place. |
 | `patches/speak-daemon.sh` | `patches/speak-daemon.sh` and root `speak-daemon.sh`. |
 | Other scripts in `patches/` | Matching paths under the base's `patches/`; the root launcher is replaced only with `--launcher`. |
+| Pinned publisher projector (download) | `models/mmproj-BF16.gguf`; full installs only, unless `--skip-vision-model`. Also available through `--vision-model-only`. |
 
 Stock `install.sh`, its desktop entries, `llama.cpp/`, model weights and personal
-memory remain in place. The README, entry-point wrapper and changelog belong to
+memory remain in place; the only added model is the missing vision projector.
+The README, entry-point wrapper and changelog belong to
 the separate overlay repository and are not copied over the base repository.
 Keep that separate repository to run future checks or reinstallations.
 
@@ -195,7 +237,8 @@ shared audio files together. The calibrator is available when ONNX Runtime is
 configured. The speech application also needs `ONNXRUNTIME_ROOT`.
 
 `--check` compares installed source bytes, checks executable timestamps and
-shared-library resolution, and runs the native speech session-protocol probe.
+shared-library resolution, runs the native speech session-protocol probe, and
+verifies the default projector's size/checksum (unless `--skip-vision-model`).
 It fails on missing or stale applications. Source timestamps and a protocol
 probe cannot prove the provenance of arbitrary manually supplied binaries.
 
@@ -218,6 +261,8 @@ A source-only install leaves build directories untouched; if you subsequently
 build manually, restore your separately saved build directories or rebuild the
 restored sources. A manually edited launcher and personal-memory restoration
 are separate operations. The script never silently restores personal memory.
+The source rollback does not remove downloaded models or resumable partials.
+A verified projector can remain in `models/` when returning to stock sources.
 
 Reapplying the same overlay is supported. It recopies and verifies the same
 sources, creates a new backup and, for a normal install, performs fresh builds.
@@ -225,8 +270,29 @@ Concurrent installer/check/restore operations against the same base are rejected
 
 ## Validation scope
 
-The packaging/installer suite passes **22 tests**, covering 66 command executions.
-It checks all **165 installed source destinations** (166 with `--launcher`)
+Run the network-free projector/installer regression suite with Python 3:
+
+```bash
+python3 patches/tests/test_install_vision_model.py
+```
+
+Its 34 tests use a small checksum-pinned download fixture and controlled compiler tools
+to exercise fresh/resumed downloads, corruption and HTTP failures, existing-file
+preservation, read-only modes, source copying, build invocation and rollback.
+It does not load a language model or exercise a physical camera/GPU.
+Set `ATHENA_TEST_STOCK_ROOT=/path/to/athena` to use the base checkout's Git-tracked
+sources as the fixture. An additional opt-in live test downloads the real
+publisher projector, checks its checksum, and verifies network-free reuse:
+
+```bash
+ATHENA_TEST_LIVE_MODEL=1 python3 patches/tests/test_install_vision_model.py LivePublisherTest
+```
+
+That live test uses a temporary directory and removes its test model afterward;
+use `--vision-model-only` to keep a model in your actual Athena installation.
+
+The original packaging validation covered **22 tests** and 66 command executions.
+It checked all **165 installed source destinations** (166 with `--launcher`)
 against the pinned stock tree, preservation of stock installer/model/memory/
 launcher files, repeat installation, source verification, path handling,
 dependency rejection, concurrent-operation rejection and rollback. This includes
