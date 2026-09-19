@@ -26,10 +26,9 @@ does not alter their behavior.
 | `patches/launch-athena-397b.sh` | Optional supervised launcher; review its model, audio and GPU settings. |
 | `patches/athena-vision-check.sh` | Camera/model diagnostic helper. |
 | `patches/install-consciousness.sh` | Installer implementation; also accepts the documented options directly. |
-| `patches/tests/test_install_vision_model.py` | Network-free installer regression tests; not copied into the base. |
 
-Historical reports, test workspaces, transcripts, sample memory and release archives
-are not part of this overlay repository. The changelog is
+Historical reports, test workspaces, transcripts, sample memory, release archives
+and development tools are not part of this overlay repository. The changelog is
 a historical record; use this README for installation.
 
 ## Prerequisites
@@ -270,26 +269,14 @@ Concurrent installer/check/restore operations against the same base are rejected
 
 ## Validation scope
 
-Run the network-free projector/installer regression suite with Python 3:
-
-```bash
-python3 patches/tests/test_install_vision_model.py
-```
-
-Its 34 tests use a small checksum-pinned download fixture and controlled compiler tools
-to exercise fresh/resumed downloads, corruption and HTTP failures, existing-file
-preservation, read-only modes, source copying, build invocation and rollback.
-It does not load a language model or exercise a physical camera/GPU.
-Set `ATHENA_TEST_STOCK_ROOT=/path/to/athena` to use the base checkout's Git-tracked
-sources as the fixture. An additional opt-in live test downloads the real
-publisher projector, checks its checksum, and verifies network-free reuse:
-
-```bash
-ATHENA_TEST_LIVE_MODEL=1 python3 patches/tests/test_install_vision_model.py LivePublisherTest
-```
-
-That live test uses a temporary directory and removes its test model afterward;
-use `--vision-model-only` to keep a model in your actual Athena installation.
+The projector installer passed **34 local regression tests** using a small
+checksum-pinned download fixture and controlled compiler tools. These exercised
+fresh/resumed downloads, corruption and HTTP failures, existing-file preservation,
+read-only modes, source copying, build invocation and rollback, including tests
+against the stock checkout's Git-tracked sources. A separate live test downloaded
+the actual publisher projector, verified its checksum and confirmed network-free
+reuse. These tests did not load a language model or exercise a physical camera/GPU;
+the test tooling is not included in this repository.
 
 The original packaging validation covered **22 tests** and 66 command executions.
 It checked all **165 installed source destinations** (166 with `--launcher`)
