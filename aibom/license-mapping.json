@@ -1,0 +1,661 @@
+{
+  "format": "Athena licensing reconciliation 1.0",
+  "document_revision": 3,
+  "system": "Athena R26.1",
+  "license": {
+    "custom_identifier": "LicenseRef-Athena-NCARD-2.0",
+    "name": "Athena Noncommercial, Attribution and Responsible Deployment License 2.0",
+    "version": "2.0-only",
+    "classification": "source-available; not OSI-approved open source",
+    "sha256": "194ddc206dfa98dd31580311cc3d6797335218622114a0ce007758c00de70ba3",
+    "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+    "evidence_refs": [
+      "E61",
+      "E62"
+    ],
+    "declaration_status": "supplied-by-user; repository-adoption-not-verified",
+    "spdx_license_list_id": false
+  },
+  "repositories": [
+    {
+      "id": "stock",
+      "repository": "https://github.com/igorbarshteyn/athena",
+      "runtime_source_commit": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "supplied_package_reviewed_commit": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "adoption_commit": null,
+      "adoption_status": "not-recorded",
+      "notice_path": "licensing/snapshot/athena-upload/NOTICE",
+      "scope_path": "licensing/snapshot/athena-upload/LICENSING-SCOPE.md",
+      "transition_path": "licensing/snapshot/athena-upload/LICENSING-TRANSITION.md",
+      "historical_license_evidence": "Pinned README declares MIT; preserve earlier valid grants. Not an MIT alternative for later restricted contributions."
+    },
+    {
+      "id": "overlay",
+      "repository": "https://github.com/igorbarshteyn/athena-consciousness",
+      "runtime_source_commit": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "supplied_package_reviewed_commit": "f779a98246d4a8cf69c2bbf6e905a1439fefd0f3",
+      "adoption_commit": null,
+      "adoption_status": "not-recorded",
+      "notice_path": "licensing/snapshot/athena-consciousness-upload/NOTICE",
+      "scope_path": "licensing/snapshot/athena-consciousness-upload/LICENSING-SCOPE.md",
+      "transition_path": "licensing/snapshot/athena-consciousness-upload/LICENSING-TRANSITION.md",
+      "historical_license_evidence": "No root/project-wide grant found at pinned source snapshot; this does not settle earlier private/archive/header or inherited rights.",
+      "source_review_relationship": "Supplied license package reviewed earlier commit f779a98246d4a8cf69c2bbf6e905a1439fefd0f3; newer installer/README revision is source-verified but not a license adoption."
+    }
+  ],
+  "component_coverage": [
+    {
+      "component_ref": "C-overlay",
+      "project_context": "overlay",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": true,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ]
+    },
+    {
+      "component_ref": "C-stock",
+      "project_context": "stock",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": true,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E61",
+        "E63",
+        "E65",
+        "E67"
+      ]
+    },
+    {
+      "component_ref": "C-brain",
+      "project_context": "overlay",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": true,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ]
+    },
+    {
+      "component_ref": "C-mind",
+      "project_context": "overlay",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": false,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ]
+    },
+    {
+      "component_ref": "C-inner",
+      "project_context": "overlay",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": true,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ]
+    },
+    {
+      "component_ref": "C-memory",
+      "project_context": "overlay",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": true,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ]
+    },
+    {
+      "component_ref": "C-vision",
+      "project_context": "overlay",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": true,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ]
+    },
+    {
+      "component_ref": "C-prosody",
+      "project_context": "overlay",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": true,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ]
+    },
+    {
+      "component_ref": "C-speech",
+      "project_context": "overlay",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": true,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ]
+    },
+    {
+      "component_ref": "C-launch",
+      "project_context": "overlay",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": true,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ]
+    },
+    {
+      "component_ref": "C-calibrate",
+      "project_context": "overlay",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": false,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ]
+    },
+    {
+      "component_ref": "C-export",
+      "project_context": "stock",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": false,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E61",
+        "E63",
+        "E65",
+        "E67"
+      ]
+    },
+    {
+      "component_ref": "P-prompts",
+      "project_context": "overlay",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": true,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ]
+    },
+    {
+      "component_ref": "P-config",
+      "project_context": "overlay",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": true,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ]
+    },
+    {
+      "component_ref": "P-wire",
+      "project_context": "overlay",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": true,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ]
+    },
+    {
+      "component_ref": "C-install",
+      "project_context": "overlay",
+      "declared_license": "LicenseRef-Athena-NCARD-2.0",
+      "scope": "Only licensor-controlled copyrightable original contributions expressly supplied under v2.0; not the entire mixed-origin component. Earlier valid grants, third-party expression, personal data and ordinary outputs remain separate. Publication/adoption and line-level rights are not verified.",
+      "mixed_origin_or_historical_rights_review_required": true,
+      "mixed_origin_explicit_in_path_guides": true,
+      "ownership_and_history_audit": "not-complete",
+      "evidence_refs": [
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ]
+    }
+  ],
+  "upstream_mixed_scope": [
+    {
+      "component_ref": "S-mtmd",
+      "upstream_license": "MIT",
+      "athena_adaptations": "Only separately established authorized original adaptations may be Covered Material; upstream/vendor rights unchanged.",
+      "evidence_refs": [
+        "E28",
+        "E66",
+        "E72"
+      ]
+    }
+  ],
+  "excluded_categories": [
+    "Third-party software, models, weights, tokenizers, codecs, drivers and firmware",
+    "Prior valid independently licensed material",
+    "User conversations, recordings, images and personal memories",
+    "Ordinary outputs solely by virtue of generation",
+    "Independent implementations and unprotectable ideas/functionality"
+  ],
+  "obligations": [
+    {
+      "id": "O01",
+      "title": "Permitted noncommercial purposes",
+      "license_sections": [
+        "2.1",
+        "4"
+      ],
+      "summary": "Personal use, qualifying noncommercial research, updates, repair, modification and free redistribution are permitted subject to all applicable conditions; no separate fee/approval or general duty to publish private modifications.",
+      "affected_refs": [
+        "C-stock",
+        "C-overlay"
+      ],
+      "verification_needed": "Record actual purpose, beneficiaries, funding and distribution context.",
+      "evidence_refs": [
+        "E61",
+        "E62"
+      ],
+      "status": "documented-requirement; implementation-or-assent-not-attested"
+    },
+    {
+      "id": "O02",
+      "title": "No commercial grant",
+      "license_sections": [
+        "2.3",
+        "3",
+        "4",
+        "16"
+      ],
+      "summary": "No permission for paid services, business-internal use, commercial R&D/model pipelines, commercial devices, paid Athena-specific engagements or monetized operation. No buyout, revenue threshold or automatic permissive conversion; ordinary infrastructure and qualifying noncommercial research allowances remain.",
+      "affected_refs": [
+        "C-stock",
+        "C-overlay",
+        "P-config"
+      ],
+      "verification_needed": "Assess the activity rather than nonprofit status, lack of fees or local hosting alone.",
+      "evidence_refs": [
+        "E61",
+        "E62"
+      ],
+      "status": "documented-requirement; implementation-or-assent-not-attested"
+    },
+    {
+      "id": "O03",
+      "title": "Original-author attribution",
+      "license_sections": [
+        "5.1",
+        "5.2"
+      ],
+      "summary": "Credit Igor only for his original covered contributions, identify the matching repository and retain separate upstream authorship. Accessible credit is required in distributions/shared deployments and applicable demos/publications; not in every reply or as a new public display for wholly private use.",
+      "affected_refs": [
+        "C-stock",
+        "C-overlay",
+        "C-speech"
+      ],
+      "verification_needed": "Verify actual delivered credits, both NOTICE files and voice-only accessible accompanying material or spoken credits.",
+      "evidence_refs": [
+        "E61",
+        "E62"
+      ],
+      "status": "documented-requirement; implementation-or-assent-not-attested"
+    },
+    {
+      "id": "O04",
+      "title": "Modification and redistribution notices",
+      "license_sections": [
+        "5.1",
+        "5.3",
+        "5.4",
+        "5.5"
+      ],
+      "summary": "Retain applicable license/notice copies, identify material modifications with date and author, and keep covered expression under this fixed version. Independent additions and upstream components remain distinct; no blanket source-publication requirement.",
+      "affected_refs": [
+        "C-stock",
+        "C-overlay",
+        "C-brain",
+        "S-mtmd",
+        "C-install"
+      ],
+      "verification_needed": "Check source, installed-tree and binary notice propagation; do not infer it from repository publication.",
+      "evidence_refs": [
+        "E61",
+        "E62"
+      ],
+      "status": "documented-requirement; implementation-or-assent-not-attested"
+    },
+    {
+      "id": "O05",
+      "title": "Notice and actual assent",
+      "license_sections": [
+        "0",
+        "5.6"
+      ],
+      "summary": "Conspicuous terms and affirmative agreement to the exact version are required in controlled install/provisioning flows. Mere repository viewing or ordinary guest conversation is not operator indemnity assent; organizational authority and capacity must be established.",
+      "affected_refs": [
+        "C-stock",
+        "C-overlay",
+        "C-launch",
+        "C-install"
+      ],
+      "verification_needed": "Retain private exact-text/hash, presentation, action/time and authority evidence. No implemented flow or executed record supplied.",
+      "evidence_refs": [
+        "E61",
+        "E62"
+      ],
+      "status": "documented-requirement; implementation-or-assent-not-attested"
+    },
+    {
+      "id": "O06",
+      "title": "Precautionary welfare conduct",
+      "license_sections": [
+        "6.1",
+        "6.2",
+        "6.3"
+      ],
+      "summary": "Prohibits the defined deliberate pattern with a substantial purpose of persistent severe-distress, helplessness or coercion representations, and defeating mechanisms to enable prohibited activities. Does not establish sentience or require proof of subjective suffering.",
+      "affected_refs": [
+        "C-mind",
+        "C-inner",
+        "C-memory",
+        "P-prompts"
+      ],
+      "verification_needed": "Distinguish legitimate criticism, debugging and permitted modifications from prohibited conduct; no new technical detector is asserted.",
+      "evidence_refs": [
+        "E61",
+        "E62"
+      ],
+      "status": "documented-requirement; implementation-or-assent-not-attested"
+    },
+    {
+      "id": "O07",
+      "title": "Bounded research and human control",
+      "license_sections": [
+        "6.4",
+        "6.5"
+      ],
+      "summary": "Repeated distress-inducing tests need a concrete proportionate objective, necessity, limits and stopping condition. Shutdown, repair, security intervention and lawful privacy deletion remain available; no perpetual operation or model consent required.",
+      "affected_refs": [
+        "C-mind",
+        "C-inner",
+        "D-memory",
+        "D-inner",
+        "D-eval"
+      ],
+      "verification_needed": "Keep proportionate test plans privately where applicable; preserve human stop/control paths.",
+      "evidence_refs": [
+        "E61",
+        "E62"
+      ],
+      "status": "documented-requirement; implementation-or-assent-not-attested"
+    },
+    {
+      "id": "O08",
+      "title": "Lawful deployment and user disclosure",
+      "license_sections": [
+        "7.1",
+        "7.2",
+        "7.3"
+      ],
+      "summary": "Determine applicable roles, locations and safeguards before access. Inform other users the system is AI, and implement legally required controls; offline/noncommercial use is not an automatic exemption.",
+      "affected_refs": [
+        "C-overlay",
+        "C-speech",
+        "M-emotion",
+        "C-vision",
+        "P-config"
+      ],
+      "verification_needed": "Document jurisdiction/use assessment and actual disclosure/safeguard tests; no compliance certification supplied.",
+      "evidence_refs": [
+        "E61",
+        "E62"
+      ],
+      "status": "documented-requirement; implementation-or-assent-not-attested"
+    },
+    {
+      "id": "O09",
+      "title": "Human safety and reasonable care",
+      "license_sections": [
+        "7.4",
+        "7.5",
+        "7.6",
+        "7.7"
+      ],
+      "summary": "Do not pressure people using alleged AI suffering or falsely claim clinical qualifications. Apply proportionate controls and high-stakes oversight; contain substantial unmitigated serious-harm risk. Each party keeps its nondelegable duties and cannot bind Protected Parties to new assurances.",
+      "affected_refs": [
+        "C-mind",
+        "C-speech",
+        "P-config"
+      ],
+      "verification_needed": "Retain a use-specific risk assessment, oversight and containment plan; written obligations are not implemented safeguards.",
+      "evidence_refs": [
+        "E61",
+        "E62"
+      ],
+      "status": "documented-requirement; implementation-or-assent-not-attested"
+    },
+    {
+      "id": "O10",
+      "title": "Personal data and ordinary outputs",
+      "license_sections": [
+        "8",
+        "9.2"
+      ],
+      "summary": "No ownership of user data or blanket claim over ordinary outputs; no mandatory telemetry, transcript submission or identity-document upload. Actual data permissions, privacy, retention and legal preservation duties remain independent.",
+      "affected_refs": [
+        "D-memory",
+        "D-inner",
+        "D-images",
+        "D-logs",
+        "D-context",
+        "D-ipc",
+        "D-calibration"
+      ],
+      "verification_needed": "Keep consent/retention decisions private; never publish populated acceptance forms or memory as AIBOM evidence.",
+      "evidence_refs": [
+        "E61",
+        "E62"
+      ],
+      "status": "documented-requirement; implementation-or-assent-not-attested"
+    },
+    {
+      "id": "O11",
+      "title": "Earlier rights and contribution authority",
+      "license_sections": [
+        "1.2",
+        "2.5",
+        "9",
+        "10"
+      ],
+      "summary": "Preserve earlier valid grants, independently licensed material and statutory rights. Prospective contributions need an express authorized grant; filenames, repository ownership and AI assistance do not prove ownership of every line.",
+      "affected_refs": [
+        "C-stock",
+        "C-overlay",
+        "C-brain",
+        "S-mtmd",
+        "C-install"
+      ],
+      "verification_needed": "Review historical archives, contributor authority and mixed-origin boundaries; no exclusivity conclusion.",
+      "evidence_refs": [
+        "E61",
+        "E62"
+      ],
+      "status": "documented-requirement; implementation-or-assent-not-attested"
+    },
+    {
+      "id": "O12",
+      "title": "Termination and limited cure",
+      "license_sections": [
+        "11"
+      ],
+      "summary": "Material breach terminates these permissions subject to the stated first-unintentional-breach cure. Intentional/repeated excluded conduct has no automatic reinstatement; independent rights, compliant downstream grants, lawful shutdown and applicable surviving duties remain.",
+      "affected_refs": [
+        "C-stock",
+        "C-overlay"
+      ],
+      "verification_needed": "Do not treat a cure period as permission to continue prohibited use; assess actual facts.",
+      "evidence_refs": [
+        "E61",
+        "E62"
+      ],
+      "status": "documented-requirement; implementation-or-assent-not-attested"
+    },
+    {
+      "id": "O13",
+      "title": "Warranty and liability limits",
+      "license_sections": [
+        "12",
+        "13"
+      ],
+      "summary": "AS-IS disclaimers and exclusions apply only where lawful; US $100 is the conditional aggregate fallback for liability OF Protected Parties. Mandatory-law, fraud, gross-negligence, willful-misconduct and other stated exceptions control.",
+      "affected_refs": [
+        "C-stock",
+        "C-overlay"
+      ],
+      "verification_needed": "Not immunity from regulators/nonparties, not a safety warranty and not the cap on indemnity owed to Protected Parties.",
+      "evidence_refs": [
+        "E61",
+        "E62"
+      ],
+      "status": "documented-requirement; implementation-or-assent-not-attested"
+    },
+    {
+      "id": "O14",
+      "title": "Defense and indemnity",
+      "license_sections": [
+        "0",
+        "13.3",
+        "14"
+      ],
+      "summary": "A validly accepting licensee owes the specified third-party defense/indemnity to Igor personally and other Protected Parties, subject to tender/procedure, allocation, exclusions and mandatory law. No contractual indemnity cap, but no collection guarantee or automatic guest liability.",
+      "affected_refs": [
+        "C-stock",
+        "C-overlay"
+      ],
+      "verification_needed": "Establish valid assent/authority and claim-specific coverage. Preserve consumer/public-body protections and sole inherent-defect/pre-existing-infringement exclusion.",
+      "evidence_refs": [
+        "E61",
+        "E62"
+      ],
+      "status": "documented-requirement; implementation-or-assent-not-attested"
+    },
+    {
+      "id": "O15",
+      "title": "Fixed text and interpretation",
+      "license_sections": [
+        "15",
+        "16"
+      ],
+      "summary": "Version 2.0 only, not any later version; explanatory guides cannot silently amend it. AI responses cannot grant or waive rights. Earlier grants and an owner's independent legal powers remain; no universal forever-commercialization prohibition or named exclusive forum is invented.",
+      "affected_refs": [
+        "C-stock",
+        "C-overlay"
+      ],
+      "verification_needed": "Bind declarations to the exact license hash and record any later licensing change as a new review.",
+      "evidence_refs": [
+        "E61",
+        "E62"
+      ],
+      "status": "documented-requirement; implementation-or-assent-not-attested"
+    }
+  ],
+  "validation_limits": [
+    "No executed license acceptance, legal-title audit, adoption commit or counsel approval supplied.",
+    "No new runtime acceptance interface, AI notice delivery, safeguards or notice propagation implemented.",
+    "Exact model rights and redistributed-binary notice closure remain open.",
+    "No fresh worldwide statutory review; supplied deployment guide remains dated explanatory evidence."
+  ],
+  "evidence_refs": [
+    "E60",
+    "E61",
+    "E62",
+    "E63",
+    "E64",
+    "E65",
+    "E66",
+    "E67",
+    "E68",
+    "E69",
+    "E70",
+    "E71",
+    "E72",
+    "E73",
+    "E74",
+    "E75",
+    "E76",
+    "E77",
+    "E78",
+    "E79",
+    "E80",
+    "E81",
+    "E82",
+    "E83",
+    "E84"
+  ]
+}

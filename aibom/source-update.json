@@ -1,0 +1,90 @@
+{
+  "format": "Athena source update evidence 1.0",
+  "document_revision": 3,
+  "observed_at": "2026-09-19T14:07:09Z",
+  "repository": "https://github.com/igorbarshteyn/athena-consciousness",
+  "previous_overlay_commit": "f779a98246d4a8cf69c2bbf6e905a1439fefd0f3",
+  "current_overlay_commit": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+  "commits": [
+    {
+      "commit": "86b8a3cb5f372b5ceca1618ef2a1d10e6ac2e7d2",
+      "committed_at": "2026-09-19T09:41:01-04:00",
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/commit/86b8a3cb5f372b5ceca1618ef2a1d10e6ac2e7d2"
+    },
+    {
+      "commit": "84743b31c5ab1adf0d1f534b42e33178ebccc2b4",
+      "committed_at": "2026-09-19T09:41:35-04:00",
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/commit/84743b31c5ab1adf0d1f534b42e33178ebccc2b4"
+    },
+    {
+      "commit": "1723234ae028e475d91eeeee37d844e70b110c9a",
+      "committed_at": "2026-09-19T09:46:22-04:00",
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/commit/1723234ae028e475d91eeeee37d844e70b110c9a"
+    },
+    {
+      "commit": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "committed_at": "2026-09-19T09:50:25-04:00",
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/commit/b3c6e54ead4976c043cd0fca9452bd07d7e2689c"
+    }
+  ],
+  "changed_files": [
+    {
+      "path": "README.md",
+      "previous_git_blob_oid": "f8182e818e6cf262bda2261be4b82804460c975c",
+      "current_git_blob_oid": "79f0fd97ea21ae2828a4346cbf3999d8d083e294",
+      "previous_sha256": "07292b95d706aa181423c29de4586ecccea92dd0ffb030cef30be36f61b432d4",
+      "current_sha256": "5b052281f088824a08e86c5d7882dafbb4898d8ecee440919e329d2eb9469925",
+      "current_size_bytes": 15718
+    },
+    {
+      "path": "patches/install-consciousness.sh",
+      "previous_git_blob_oid": "4e3765733b360925f991723155c584185754cfe0",
+      "current_git_blob_oid": "73051ba30b03573d5d5f1b3cc5ec1c9da54bda52",
+      "previous_sha256": "343c7b18045afd3e73bb41a4b0988018647faaf3958d6c8f7563786b46b00dcc",
+      "current_sha256": "6e76d3b70ad017fcaa77040d33686d1aaf694b20dda5011d96b124fd1fd2ab60",
+      "current_size_bytes": 25368
+    }
+  ],
+  "tracked_overlay_files": 87,
+  "unchanged_overlay_file_bytes": 85,
+  "native_runtime_source_changed": false,
+  "stock_source_changed": false,
+  "checks_performed": [
+    "Exact Git tree and full two-file diff inspected",
+    "All 87 current overlay files hashed",
+    "Installer and entry-point Bash syntax passed",
+    "Entry-point --help executed successfully; new options present",
+    "Publisher raw pointer matches installer revision, SHA-256 and exact size"
+  ],
+  "checks_not_performed": [
+    "No 922 MB model download",
+    "No real installation, full build or camera/GPU inference",
+    "No independent reproduction of the README-reported 34 local regression tests or live publisher download/reuse test; development tooling is explicitly not included"
+  ],
+  "readme_test_claim": {
+    "claimed_local_regression_tests": 34,
+    "claimed_live_publisher_test": "Downloaded the actual publisher projector, verified its checksum and confirmed network-free reuse",
+    "tooling_included": false,
+    "public_test_path": null,
+    "status": "Maintainer-reported local/live checks; test tooling explicitly excluded from the repository; not independently reproduced"
+  },
+  "readme_followup": {
+    "installer_unchanged_since": "84743b31c5ab1adf0d1f534b42e33178ebccc2b4",
+    "commits": [
+      "1723234ae028e475d91eeeee37d844e70b110c9a",
+      "b3c6e54ead4976c043cd0fca9452bd07d7e2689c"
+    ],
+    "change": "README-only clarification: development tools are excluded, removes the unavailable test-script invocation, and reports local regression plus live publisher download/reuse results as maintainer checks"
+  },
+  "license_context": "Supplied licensing package 2.0 reviewed the earlier overlay commit. Those documents remain unchanged historical evidence; this installer update is not a license adoption commit and does not close rights/assent gaps.",
+  "projector": {
+    "publisher_repository": "unsloth/Qwen3.5-397B-A17B-GGUF",
+    "publisher_revision": "da33c16fa4440f831149fcf53b98a22bc07785e5",
+    "publisher_file": "mmproj-BF16.gguf",
+    "expected_sha256": "b3624272d7b9b49ffe6c6d0c592980bed6b026ce59cde11708bb230395c2a227",
+    "expected_size_bytes": 921705184,
+    "url": "https://huggingface.co/unsloth/Qwen3.5-397B-A17B-GGUF/resolve/da33c16fa4440f831149fcf53b98a22bc07785e5/mmproj-BF16.gguf",
+    "local_reference_path": "models/mmproj-BF16.gguf",
+    "installed_sha256": null
+  }
+}

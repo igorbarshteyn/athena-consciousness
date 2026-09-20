@@ -1,0 +1,1790 @@
+{
+  "format": "Athena source-file manifest 1.0",
+  "scope": "Every tracked file in the two identified project checkouts; source bytes only, not installed binaries.",
+  "files": [
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "README.md",
+      "git_mode": "100644",
+      "git_blob_oid": "79f0fd97ea21ae2828a4346cbf3999d8d083e294",
+      "sha256": "5b052281f088824a08e86c5d7882dafbb4898d8ecee440919e329d2eb9469925",
+      "size_bytes": 15718,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/README.md",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "changes-consciousness.md",
+      "git_mode": "100644",
+      "git_blob_oid": "9ab7d327586b5d09e7eea19d73c39133471e155d",
+      "sha256": "3cae302568c92b7100f125f1f95d42c18ca156d71397fb890b7b579d14725579",
+      "size_bytes": 1088427,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/changes-consciousness.md",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "install-overlay.sh",
+      "git_mode": "100755",
+      "git_blob_oid": "4d954531ed97fe55f1e38240ddff067c142e5d4e",
+      "sha256": "85845bcb9ee28e18a7115ee3202549c334b1b80f8951aefde7702f8e46a25fb8",
+      "size_bytes": 260,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/install-overlay.sh",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/athena-vision-check.sh",
+      "git_mode": "100755",
+      "git_blob_oid": "15b25b7771bbc43af1ba85490425a74e1e456086",
+      "sha256": "45173f339451cfc95385d798732879d350d0a28719afb430f9de8b96d76bed18",
+      "size_bytes": 6704,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/athena-vision-check.sh",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/install-consciousness.sh",
+      "git_mode": "100755",
+      "git_blob_oid": "73051ba30b03573d5d5f1b3cc5ec1c9da54bda52",
+      "sha256": "6e76d3b70ad017fcaa77040d33686d1aaf694b20dda5011d96b124fd1fd2ab60",
+      "size_bytes": 25368,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/install-consciousness.sh",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/launch-athena-397b.sh",
+      "git_mode": "100755",
+      "git_blob_oid": "ed81461454834465dfb6fd5db0456d10df43be36",
+      "sha256": "6fad53b172df1d81273ed4e5d255cd68701f39b2ef4b62ddcc069628ea053676",
+      "size_bytes": 143370,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/launch-athena-397b.sh",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/orpheus/athena_prosody.h",
+      "git_mode": "100644",
+      "git_blob_oid": "5d4460051f9c1803dfbdf6d49d3168d747c81f36",
+      "sha256": "62bce3147ac8dddf3f951725a0c648f27090e48d4f3846059076487fe853fb58",
+      "size_bytes": 16939,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/orpheus/athena_prosody.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/orpheus/athena_tts_wire.h",
+      "git_mode": "100644",
+      "git_blob_oid": "0c961d38acd7f4a58ed2ee32f98d71f03aa6af01",
+      "sha256": "12c1158607d2720a116d8af521fafb9b0af90d85a50e1335f9ecc8ab6eca679b",
+      "size_bytes": 12921,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/orpheus/athena_tts_wire.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/orpheus/orpheus-speak.cpp",
+      "git_mode": "100755",
+      "git_blob_oid": "55d0f63105fad4abeecf080ca4d8c6c083f559b1",
+      "sha256": "8f1b9a216ff5897d93d0ed20d4765335e78eda5575c5068dd491256a596b6e4c",
+      "size_bytes": 185939,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/orpheus/orpheus-speak.cpp",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/speak-daemon.sh",
+      "git_mode": "100755",
+      "git_blob_oid": "0fc96361fe21d21c392c10893993c94a1681ca19",
+      "sha256": "0253b1bcf6f0d7480d564ffbf38b1e27f04eda65e868753239a959c572942b98",
+      "size_bytes": 8350,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/speak-daemon.sh",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/CMakeLists.txt",
+      "git_mode": "100755",
+      "git_blob_oid": "5101a37f08b01d885a22e29ff6b52123d08a5fff",
+      "sha256": "bf6ead0f834329b7d38cf6c43044ef072b93366349b1b562802255e2c4d59a11",
+      "size_bytes": 7761,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/CMakeLists.txt",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena-emotion-calibrate.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "c3415f027fbf64d764f560b10907fbdf7e883f1a",
+      "sha256": "509bce348963df532a9409a50458180ddf1c35898bc8ab7ac733f191572f9c1d",
+      "size_bytes": 40301,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena-emotion-calibrate.cpp",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_affect2.h",
+      "git_mode": "100644",
+      "git_blob_oid": "34ca36898db82fcae8a69f5f460076454bf730b8",
+      "sha256": "64506ddcae180801533985357f26a68eed27421d16af8f46de80218fca25f759",
+      "size_bytes": 97474,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_affect2.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_album.h",
+      "git_mode": "100644",
+      "git_blob_oid": "93b06ae3fc41402e001ec63b064e0ad6d71a0174",
+      "sha256": "80b987517b52b38a70960dc5be9f6730016904b652d91cdd166f6e49e9273d68",
+      "size_bytes": 7980,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_album.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_calib.h",
+      "git_mode": "100644",
+      "git_blob_oid": "1e52090869c7a815874d4444b0128ff919deca28",
+      "sha256": "fe1e189d5da941262e8fdf15bd6e380ef3157d21c967dc5bccec362dadde84f2",
+      "size_bytes": 30159,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_calib.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_compact.h",
+      "git_mode": "100644",
+      "git_blob_oid": "4f64e7d98a6e06c8da036e5a6c904f8ac12ae27b",
+      "sha256": "f5b4cdda9094f5ce6c2ea9f43fd526d1facf9777548c1a3fb2f8f027dafc91ba",
+      "size_bytes": 160121,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_compact.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_consciousness.h",
+      "git_mode": "100644",
+      "git_blob_oid": "adb5cf7c0f76852896bc51d424d3aa94fbe739ba",
+      "sha256": "d44e8dc9891ea6a740d4b080a27c59a1b7c7775f9043a534139ad998c789abbf",
+      "size_bytes": 2147966,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_consciousness.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_continuity.h",
+      "git_mode": "100644",
+      "git_blob_oid": "b775cabcd07b1da32bb2e8273dbf848e4f579250",
+      "sha256": "097af94fad5579e8aeb9d280e2e74e2b30614cd858aecee17563610225bf1460",
+      "size_bytes": 26512,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_continuity.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_emotion.h",
+      "git_mode": "100644",
+      "git_blob_oid": "5853f1baa69506f916c91c63be4874b974251bda",
+      "sha256": "04f57427816ac6383b10195bbf8881e33f76708a153f34bdd06c753b3a36a7dd",
+      "size_bytes": 47066,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_emotion.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_evidence.h",
+      "git_mode": "100644",
+      "git_blob_oid": "cdfe6a19bb02dc87f5e47b554313ce44431aa8bd",
+      "sha256": "9da7cae76c6d9abcc67defab534019a9ba66d5f9052a41967fbbabb2b83efc79",
+      "size_bytes": 4099,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_evidence.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_initiative.h",
+      "git_mode": "100644",
+      "git_blob_oid": "46fc38dfcaf6e980613fe1b80e264e61cf6dcd87",
+      "sha256": "c6e1e8fc0090b33f82571879580f166c823ebcbf3287ee879069318d4016cdc6",
+      "size_bytes": 29914,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_initiative.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_initiative_seam.h",
+      "git_mode": "100644",
+      "git_blob_oid": "d091bbd8aed7616c5b4158a9385dca5dd8f5f545",
+      "sha256": "b90619b932a37b2c40021f4231c49c5034a7cb434fef521632d1be6c03b88ce4",
+      "size_bytes": 7917,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_initiative_seam.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_initiative_steps.h",
+      "git_mode": "100644",
+      "git_blob_oid": "30f846c7fe5a49f850918ae28af08d66e9b2731b",
+      "sha256": "fa21776a7901bd0e8fb3f0f096fce110a06fdfa15f63acd5c5e5ae7fb1b3eded",
+      "size_bytes": 7974,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_initiative_steps.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_inner_worker.h",
+      "git_mode": "100644",
+      "git_blob_oid": "e349e1e4199af6e85926e1e47f0eace5598d1ecb",
+      "sha256": "bc9d48fce39815c5320396613345a4e6ca4172a110c020f0d66a57f74c9fa489",
+      "size_bytes": 18699,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_inner_worker.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_intent.h",
+      "git_mode": "100644",
+      "git_blob_oid": "1af348abe7d84e19114553ba96b3bcf8f0916b33",
+      "sha256": "cef7e58990082efe2c65c5ed00542b7a3479ffe74229404400e435ae0364d6ac",
+      "size_bytes": 28746,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_intent.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_memory.h",
+      "git_mode": "100755",
+      "git_blob_oid": "1f0fffba6a9bfd5304a55485a3278b49ab933fec",
+      "sha256": "d46ee60cd193122a3b26e142ce3cc6355e65a5a7e81cfcc64e7a92d2cdf24dd2",
+      "size_bytes": 348344,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_memory.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_note_slots.h",
+      "git_mode": "100644",
+      "git_blob_oid": "99fd381c43cc4c1b3293fe8ea04fbcc868d26ee0",
+      "sha256": "9bbd67c84ea3b53f3a566c62da61d29e94fa0e518a0c3cfa4b6898a9c2c9dc3c",
+      "size_bytes": 2465,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_note_slots.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_operational.h",
+      "git_mode": "100644",
+      "git_blob_oid": "cf24dbc6859d2b0fd698c037a11987a2d97fce87",
+      "sha256": "534376ca71edcb9ee7026b59ca7b025d542f2dbc18799b22134503e4fb370c4e",
+      "size_bytes": 11751,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_operational.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_people.h",
+      "git_mode": "100644",
+      "git_blob_oid": "050df2b665b7e56b30e37fdf1a0cf99a3f642969",
+      "sha256": "3da805d06350af084def4afc0646016341d59aab77f09146394e089435d2a42e",
+      "size_bytes": 36103,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_people.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_projects.h",
+      "git_mode": "100644",
+      "git_blob_oid": "799857a69892fef0e4cac17c1bf07419f7a99c81",
+      "sha256": "13f36b236713777d3ae303a0a8a766695db951a0fab0d728355eee3fc587d593",
+      "size_bytes": 51145,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_projects.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_qualified.h",
+      "git_mode": "100644",
+      "git_blob_oid": "c38048cda3a1d4285869a9edc5a988dd075e0de4",
+      "sha256": "8dd4569d3da80c8cd5a6c9fe0d122159f481229cdf3999fe136a20a1a4b9145f",
+      "size_bytes": 31550,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_qualified.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_r26.h",
+      "git_mode": "100644",
+      "git_blob_oid": "e2e4bd40600552b734e658a52364f13380af401b",
+      "sha256": "de0d96c80aa3e76b50336e794b13c32d2afb262356900a5d3c6fee3590928942",
+      "size_bytes": 11685,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_r26.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_report.h",
+      "git_mode": "100644",
+      "git_blob_oid": "bc518d4d380eff617a47adf3ad2a38526d1dc51c",
+      "sha256": "4ea3b2ae6a4d9c0000593c5e519a3e327b3631290a682941afb11e36c0fde2a8",
+      "size_bytes": 472634,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_report.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_seam.h",
+      "git_mode": "100644",
+      "git_blob_oid": "7b5b6b6a5f157db4816f307dc7fc217c2e7d22a8",
+      "sha256": "7a48f12bba3daa08b3cec8865f7df23ee8525f14ff776488cf9044e0840c8f92",
+      "size_bytes": 230034,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_seam.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_tts_wire.h",
+      "git_mode": "100644",
+      "git_blob_oid": "0c961d38acd7f4a58ed2ee32f98d71f03aa6af01",
+      "sha256": "12c1158607d2720a116d8af521fafb9b0af90d85a50e1335f9ecc8ab6eca679b",
+      "size_bytes": 12921,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_tts_wire.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_vision.h",
+      "git_mode": "100644",
+      "git_blob_oid": "21b194ab6f3097b8c683cb0e11bad20ff2b7e358",
+      "sha256": "64ee1bb193eb27e1657fda09790fcf3d7869a0b8b7b023040adbc17677fdd224",
+      "size_bytes": 464537,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_vision.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/athena_voice.h",
+      "git_mode": "100644",
+      "git_blob_oid": "79c623982c24bd52c0d0d5c025ad04ff38afeab7",
+      "sha256": "c7060b63ed70ffbc4943ed94d295efdc68b1f0dfd7fde3997dc40718400a3430",
+      "size_bytes": 51098,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/athena_voice.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/clip-graph.h",
+      "git_mode": "100644",
+      "git_blob_oid": "39f069501bc99f33e0ec2d1e052c6d99b9d18f1a",
+      "sha256": "fde0eb48812c0eacdac18e9b1921e6d4f10fae1c50884941b15f065c725610d0",
+      "size_bytes": 4154,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/clip-graph.h",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/clip-impl.h",
+      "git_mode": "100644",
+      "git_blob_oid": "c359851999ff84e8dce3fe48d7e78d24d59c3e59",
+      "sha256": "051c77048abdb7b59f919f55fd57b157896e33ca9a1dddc6cfd7737cd2913c47",
+      "size_bytes": 28727,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/clip-impl.h",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/clip-model.h",
+      "git_mode": "100644",
+      "git_blob_oid": "ce15dbcd11e8c03de8dbd40450140d63161757c9",
+      "sha256": "1d19a19caf6341450e552aed3b24d7ec76c409ef596a29044731b7e8f9b9e49d",
+      "size_bytes": 20919,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/clip-model.h",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/clip.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "02f0982797eddbbc9d97426a684143258021debd",
+      "sha256": "6ba05ddd9e902e28acaa92c32ef1f13734cab375d9f36c8b1405184710637212",
+      "size_bytes": 212841,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/clip.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/clip.h",
+      "git_mode": "100644",
+      "git_blob_oid": "5f9dc93c6b032a2e2314673407a6e8d5b3a55e63",
+      "sha256": "c4c5bc9a119273d6a8eec12e51a8bfc74204afcc308e985810ee4fca3c81643c",
+      "size_bytes": 4686,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/clip.h",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/debug/mtmd-debug.h",
+      "git_mode": "100644",
+      "git_blob_oid": "fddb3f5c4a1a27003e2e9b92a26b4f6302e78ec8",
+      "sha256": "38f6ff31eabd791e5d9233b7b0c8abf0e31297219c4859da2b5899a51e18882f",
+      "size_bytes": 779,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/debug/mtmd-debug.h",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/cogvlm.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "44bc884421df49cfdcf3884030385c94eabb5b99",
+      "sha256": "6406a79c4b9bbf94e10daffe85c082ce50a7ea1c18bec4537a8930c0b7fa6431",
+      "size_bytes": 3027,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/cogvlm.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/conformer.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "f58c5048f594f5135efb9a540c6efaff71838c51",
+      "sha256": "aa9bd64e773bb6b77320878aa55c12170df13357747b2275c74fd0c359e83041",
+      "size_bytes": 9666,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/conformer.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/deepseekocr.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "b1f6ead5b5ed9036387edd6d94d7a8a5a30314c3",
+      "sha256": "9c61797f1d7df0b9d82aa355d9e935cf5bd0cb5cefe93fbba7ce4e00fdbc829f",
+      "size_bytes": 14164,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/deepseekocr.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/dotsocr.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "92974bb670d8aecafc46dabf4de0901405599abf",
+      "sha256": "c0c35144bae11313473a95862458e645f9a7732386bd5cfe0bc2d4959fafbd54",
+      "size_bytes": 1699,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/dotsocr.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/gemma4a.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "5dd64b7833b0c118d476c0ee0c1dfda2991d0c26",
+      "sha256": "461d390af3176884d1f766dc43198597c5f2e132c9d698e992a5da75409b51e5",
+      "size_bytes": 12908,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/gemma4a.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/gemma4v.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "4068a08aaf97f37d9967542576881211911e57b9",
+      "sha256": "7faea068d8755d2a56cb35b621df80ae8e8663d44f9d8a0fec84ac761ae48e00",
+      "size_bytes": 5436,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/gemma4v.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/glm4v.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "623d2e384b6b02409d5068755f6ef77b46b45254",
+      "sha256": "049ab219de0ba99b62229414cc9d38122d0460bbf7f5d1fc2a7de0963f418059",
+      "size_bytes": 4588,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/glm4v.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/granite-speech.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "c7e3794a49e136d01726b838cee6d641260797f2",
+      "sha256": "fe997549f8a98ec77e7b946539856a5edfb865ef82256d0fef0610f3e9d5e51d",
+      "size_bytes": 11475,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/granite-speech.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/hunyuanocr.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "45ed684f70d55612b6a96ee459859e638ab6770d",
+      "sha256": "e9bb25da0ff8c41887d97dc37746ac8c0d356dbac8712ae5225bcf203b03dde8",
+      "size_bytes": 2996,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/hunyuanocr.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/internvl.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "9aded3b97cf71847c3addce015b75b0632131de5",
+      "sha256": "361a464d39ed77bccc8edd75b67334a17a77532c3130d8f6d002563a5962142e",
+      "size_bytes": 2561,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/internvl.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/kimik25.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "cf9f27f63af6c3ea64d48757c38421cf69087d08",
+      "sha256": "4862eb83fa89fca0d365fb342c6ccc31405e97ec7e055f08b479b820b138f359",
+      "size_bytes": 3671,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/kimik25.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/kimivl.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "0a06f5090e4584b48a56ffb5198bf0b1a20926c6",
+      "sha256": "4b7b2598130afd9b15f3edcaf471eba9089d001cd7a6f4e4d33afd4ab3be5e38",
+      "size_bytes": 2090,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/kimivl.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/llama4.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "01af54bbab7e0d8d4b002e0234467fa35104d0cc",
+      "sha256": "0697403992a6d9ef39c4f283ff8eb822e5dc00d7317eaedeebc15c2c9119b044",
+      "size_bytes": 3697,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/llama4.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/llava.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "4af17ccfe853cb858fbbcd44ec206376bcb78d20",
+      "sha256": "04f63874fa46454e9c8e76e037eb38f3d45d6b8b45eacf154a25c5060f1ecf38",
+      "size_bytes": 17485,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/llava.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/mimovl.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "19db88f132ac19abcb88ffe3e68d88baf0e7cc3d",
+      "sha256": "10bd2bcf4f26be82a531acc445b27b6e912ac0b6851e605281977f22988e13cf",
+      "size_bytes": 9428,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/mimovl.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/minicpmv.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "bac087ffdfce88914a3016e9f06806116a2f7eed",
+      "sha256": "5223efa7109f7e11672e8304d98bc4c844f7acbf82de27eda019320d3e012489",
+      "size_bytes": 16194,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/minicpmv.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/mobilenetv5.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "1c42218d2affc3329a41fc498695de52ee7e4098",
+      "sha256": "52ad7007e5a9d6b3fd7c57d38fe4b7b307525853062aa5ab5731092b03d8c141",
+      "size_bytes": 16548,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/mobilenetv5.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/models.h",
+      "git_mode": "100644",
+      "git_blob_oid": "955daa6d6d343f740429f4defbc59659aefe9e88",
+      "sha256": "71898d21da4fe82b65050d35e047362826219224e1d4aad1d1ec98ec937957a5",
+      "size_bytes": 6801,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/models.h",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/nemotron-v2-vl.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "03094be1b27da903f803f4f743416de0eb791beb",
+      "sha256": "0a6241340d7801a9b973c26e3e8ec9c3f29b9c661d3f802077218f9c135d9688",
+      "size_bytes": 1156,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/nemotron-v2-vl.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/paddleocr.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "5d3a13fb57103555e46a9216f79ab3c6355dd6da",
+      "sha256": "f7aa6b5ca067eab54d25da240decf224c16b99251cd72972e57a8f7559f40939",
+      "size_bytes": 1766,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/paddleocr.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/pixtral.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "d6d037b6941256c71227a449efedefd1049ccb8a",
+      "sha256": "11e30cb72e1c34e6c78bee0fe64f07be88082058ece1bb1057eb6daaa96d5fe8",
+      "size_bytes": 3568,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/pixtral.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/qwen2vl.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "ebf10757376b0dcbaf5382091ac32d04d42d52bb",
+      "sha256": "bba7b1c8db541b2b02e799b946095394d467a12da9d5811f1dcc299ad91e5d1f",
+      "size_bytes": 6820,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/qwen2vl.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/qwen3a.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "1384e5155ee25efa0c7c3f103d18cac3592c90c2",
+      "sha256": "8c68ccf6a2c03da47686217f87e332d310c5d3a8c4409238916803bbee7f1f4d",
+      "size_bytes": 2211,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/qwen3a.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/qwen3vl.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "fa1100dda8d5d08df6553008136f506659c57572",
+      "sha256": "11eafa731e860e736c58661edcd4cea87710abb9f608590976e587e6b0d4201b",
+      "size_bytes": 7011,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/qwen3vl.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/siglip.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "7ef98eed0ec9db2d3a0d76f457962864fa9bfe1e",
+      "sha256": "f1400d3e33e1e8f50aa7ee3ef76af6e2eb69d0bbd69ab84870c469ffd3efdb89",
+      "size_bytes": 3317,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/siglip.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/step3vl.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "5142b0bba3876a972a5faf201083be4d15f9c4ff",
+      "sha256": "02e7726e286650a9500ec9432ad3a43192620fd4cf42e1e918bff6c1e6918b5a",
+      "size_bytes": 2708,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/step3vl.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/whisper-enc.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "2a82ae50bf5f84027787d10190f914c74d8d74f4",
+      "sha256": "8cc10213aad202b449483d1111baac152ed4a66b4580188acb26a9276db2cf0d",
+      "size_bytes": 4725,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/whisper-enc.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/yasa2.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "e8cd3dacbf5a25b8e1729ef00fe76c54e16c06e6",
+      "sha256": "7ed9ef51c4c53ef351badda04fe2c686ad10ba6bbc89bb96a14e63e2c605f10b",
+      "size_bytes": 8725,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/yasa2.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/models/youtuvl.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "cd8f6d446f0895673255e4d21498e8610155154d",
+      "sha256": "d9f915d798575ea47d93d5b9101c3b9a135849473ab09c42d0bd0fd1d98a4117",
+      "size_bytes": 6827,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/models/youtuvl.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/mtmd-audio.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "8f0a9875b1043fff88a281bd95a34111bbd45ad2",
+      "sha256": "43c90635bf8a72b5c6c4a854866094516bccb22a902ac4d019811ccf99e25a75",
+      "size_bytes": 34931,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/mtmd-audio.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/mtmd-audio.h",
+      "git_mode": "100644",
+      "git_blob_oid": "c1a705de522f3ce4c7749eed613145c338c62253",
+      "sha256": "6c2db6245ecbbd168d46508304e0a2a578a11430986b8df89afbb2b27f153598",
+      "size_bytes": 4108,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/mtmd-audio.h",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/mtmd-helper.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "dd1b4c78655ca379159d69862be305537267fa32",
+      "sha256": "b6e10d3450498864f7c4b6756490e5a9c7d7074cb9707df870420a0b8d37997f",
+      "size_bytes": 20030,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/mtmd-helper.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/mtmd-helper.h",
+      "git_mode": "100644",
+      "git_blob_oid": "57da78a754fc7c524af8fa580fb9d7aeaa44e49c",
+      "sha256": "b5cbc1513e58f6ee0a6af71750ed28bc4d8f6a54f3e7fc911355680b40ba7f81",
+      "size_bytes": 4529,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/mtmd-helper.h",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/mtmd-image.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "1b058e026013c008ad5d10cb9be6be3452a62790",
+      "sha256": "91f595b6206e0904b442a0a3b9bf04e3b42adbbc04892c8ff1bb65ecd35b5595",
+      "size_bytes": 60630,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/mtmd-image.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/mtmd-image.h",
+      "git_mode": "100644",
+      "git_blob_oid": "08129a08ed550e4a6a1975059c019481f71e33e2",
+      "sha256": "ab381efb15b9f1e5c96588f5b7ecfba27ec9b49e66a18899c78db5b7d13ab1e0",
+      "size_bytes": 8618,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/mtmd-image.h",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/mtmd.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "1ab8a4c0464a2c5d1a200b9705a5931c7274b6f8",
+      "sha256": "d5fdd4ec6a657c6395831d9c7ae78aeef88be929c2476a54ec2ff76ac38d3323",
+      "size_bytes": 61277,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/mtmd.cpp",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/mtmd.h",
+      "git_mode": "100644",
+      "git_blob_oid": "54b9515a3ea44bba26452c75d3d1657e51de3af6",
+      "sha256": "e9504d438ee5edc1d812bfc9b1828aff374c4235efea72e5b57c8db21ad393d1",
+      "size_bytes": 13386,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/mtmd.h",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/vendor/miniaudio/miniaudio.h",
+      "git_mode": "100644",
+      "git_blob_oid": "c6d493ee81f553b8dd584e402453f130c20e0546",
+      "sha256": "ac7af4de748b7e26b777f37e01cee313a308a7296a3eb080e2906b320cc55c89",
+      "size_bytes": 4108168,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/vendor/miniaudio/miniaudio.h",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/mtmd/vendor/stb/stb_image.h",
+      "git_mode": "100644",
+      "git_blob_oid": "9eedabedc45b3e6fd88fae6f14a160b4d53272ec",
+      "sha256": "594c2fe35d49488b4382dbfaec8f98366defca819d916ac95becf3e75f4200b3",
+      "size_bytes": 283010,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/mtmd/vendor/stb/stb_image.h",
+      "ownership": "bundled third-party / adaptation"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/silero-endpointer.h",
+      "git_mode": "100755",
+      "git_blob_oid": "44c47ae2d5268237071d5e5f10a7db7f2e8aa8a9",
+      "sha256": "b877002898e96151c7cb4b2a831e3dd84fdcf15a1cc96f28d1dacb361bb8622c",
+      "size_bytes": 22128,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/silero-endpointer.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/silero-turn-state.h",
+      "git_mode": "100755",
+      "git_blob_oid": "a4a2e5dcd6158fe38785635321bd43bb74d84092",
+      "sha256": "35240492ff1a58df214915c81f5ddb8b7d84f574b42273d7f88b6cb99159e90b",
+      "size_bytes": 11234,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/silero-turn-state.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/talk-llama/talk-llama.cpp",
+      "git_mode": "100755",
+      "git_blob_oid": "f2b5e94649b970e342d6c180dc7f57e813431491",
+      "sha256": "a2dca728e8a4e1192b7305e03424da497179352ff15ebec39c86bf8ec70b331d",
+      "size_bytes": 1141906,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/talk-llama/talk-llama.cpp",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/whisper-common/common-sdl.cpp",
+      "git_mode": "100644",
+      "git_blob_oid": "e165d21bfe90eebd6517e6c1b853c06eddba444a",
+      "sha256": "13534df7174925262207daeedb58a3ff83eb4a80dcec2ec28ce8f9c2327eb308",
+      "size_bytes": 9553,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/whisper-common/common-sdl.cpp",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "overlay",
+      "revision": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "path": "patches/whisper-common/common-sdl.h",
+      "git_mode": "100644",
+      "git_blob_oid": "b2006f7925e7de014728d85541fdc58468b79b3c",
+      "sha256": "0dd2c1410bf8ac60caff6c36c86b8b64d1fb9f4322c4adeb2484e9d35ba9afca",
+      "size_bytes": 2921,
+      "url": "https://github.com/igorbarshteyn/athena-consciousness/blob/b3c6e54ead4976c043cd0fca9452bd07d7e2689c/patches/whisper-common/common-sdl.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": ".gitignore",
+      "git_mode": "100644",
+      "git_blob_oid": "455f8ee6c676fd288eae4406bdad93eb010d4359",
+      "sha256": "fac08a3eff039a883345596431e866a59d33701b55a8a49890499463451a99da",
+      "size_bytes": 2245,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/.gitignore",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "Athena 397B.desktop.in",
+      "git_mode": "100644",
+      "git_blob_oid": "cfb0c708b5237639ca1d891043276abf3a1692aa",
+      "sha256": "14f1382a206ecaec80852399bad33d4d4bdba00ff6d14bb03ac89017b4b0fb48",
+      "size_bytes": 361,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/Athena 397B.desktop.in",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "CHANGES.MD",
+      "git_mode": "100755",
+      "git_blob_oid": "e5beffc39ca5c3df28e8a5b2d69012b67c4e9087",
+      "sha256": "c6194fab1b8da444df7dc8675740234eb71a6cb1d48f42a414a5e6c24114fc3c",
+      "size_bytes": 92413,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/CHANGES.MD",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "CLAUDE.md",
+      "git_mode": "100755",
+      "git_blob_oid": "74822c584c916eb5b0f4228efc9e227a40ffe070",
+      "sha256": "fc073df5ddbd83b166589fdc3a4a8f3f83241354a061d7557adba13260d6287e",
+      "size_bytes": 33520,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/CLAUDE.md",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "README.md",
+      "git_mode": "100755",
+      "git_blob_oid": "8ceb41ae912c874b143fc0b5ff584e72fd74dea3",
+      "sha256": "fd0880a6b8e486a32a5385c234a51c289a9f104b16f2ee866d05e7d695f63d9a",
+      "size_bytes": 61081,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/README.md",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "STABILITY-RUNBOOK.md",
+      "git_mode": "100755",
+      "git_blob_oid": "c6bf51082947cc85fcdaa717c00ee7c8249081d1",
+      "sha256": "fb1dd3ee9d30bf90b71c2b1fe027ad2cfb183f303f53beb48cb91d536b616318",
+      "size_bytes": 7988,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/STABILITY-RUNBOOK.md",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "apply-crash-capture.sh",
+      "git_mode": "100755",
+      "git_blob_oid": "e395f95a09eebfde1db631ea481c1eec3746b0ed",
+      "sha256": "eaa986cb9e9eb10d901b517606079c108cb676135025372c2cb9990080edb197",
+      "size_bytes": 4631,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/apply-crash-capture.sh",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "apply-gsp-stability.sh",
+      "git_mode": "100755",
+      "git_blob_oid": "77d8c26282cf914420fe81bfffac9964d17623fe",
+      "sha256": "7312a5a965ba419211867fea7149f5faca7ac387355992412a4a9fd3f520db48",
+      "size_bytes": 6760,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/apply-gsp-stability.sh",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "athena-autostart.desktop.in",
+      "git_mode": "100644",
+      "git_blob_oid": "0ecd99bf16f031bae2fde35ab61e01264c7d3b80",
+      "sha256": "bde0b6f06cce23f6225fb4be0d22a6713d6bef8cc52bb1d0956d54faac015422",
+      "size_bytes": 1355,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/athena-autostart.desktop.in",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "athena-crash-capture.sysctl.conf",
+      "git_mode": "100755",
+      "git_blob_oid": "de4d8b14e32dd3d89cd610b5f509f4528348eac4",
+      "sha256": "acb5bada3c15a84dd9edb7d8060c77b2322787645be946a49d69200bd6d2d33c",
+      "size_bytes": 2297,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/athena-crash-capture.sysctl.conf",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "athena-demo-script.txt",
+      "git_mode": "100755",
+      "git_blob_oid": "aec5ce3bc362826b04dd58e25eeb4332364ecb03",
+      "sha256": "8aaff7a4c906ce3e62cc5ba26bb5d0e104753d772c32f8f267ea19e6753f7ac4",
+      "size_bytes": 22174,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/athena-demo-script.txt",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "athena-gpu-monitor.sh",
+      "git_mode": "100755",
+      "git_blob_oid": "b87d35138452a4e9ff60d780aa3b8b03e750bf5b",
+      "sha256": "26db2c72532dea5ff746a6ea89e9379bd5b31f9dbfa3601c1739b4da8553160e",
+      "size_bytes": 8627,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/athena-gpu-monitor.sh",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "athena-icon.jpg",
+      "git_mode": "100755",
+      "git_blob_oid": "963832b5bf1d5c0777f2a4dd1c4fc40e7f20a96c",
+      "sha256": "25964a7c2ce70639e80875291381ff6fb1431e365e2bc0e75ea44e7c5b57b840",
+      "size_bytes": 25697,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/athena-icon.jpg",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "athena-kmsg-logger.cpp",
+      "git_mode": "100755",
+      "git_blob_oid": "e908d48ef7b79cb86d469bfce03ab8e0ec95dfd9",
+      "sha256": "a6c2755eec8863897e0dbbc47572e263c40ea107375e20c27bd579c4ffa617cf",
+      "size_bytes": 6052,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/athena-kmsg-logger.cpp",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "athena-soak-matrix.sh",
+      "git_mode": "100755",
+      "git_blob_oid": "385f4b1d8bb1311f2aeffeab64f8fcc38dfac65a",
+      "sha256": "6918d4b05dd3faf519d82f72d8dff13871c8bcca89eb62ffe0e2cdd347ca1049",
+      "size_bytes": 10386,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/athena-soak-matrix.sh",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "athena-uvm-hardening.conf",
+      "git_mode": "100755",
+      "git_blob_oid": "3b111592d79da2f3fb6fc1bd9a9f550161d085e6",
+      "sha256": "911f70757af0fed350bdabec24822e35d97224e62a4ff968ba110d5c86d829d5",
+      "size_bytes": 2083,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/athena-uvm-hardening.conf",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "athena_memory/.gitkeep",
+      "git_mode": "100644",
+      "git_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/athena_memory/.gitkeep",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "check-kernel-fix.sh",
+      "git_mode": "100755",
+      "git_blob_oid": "5984455156e53d669deaf480b92f6ca68a28ee8d",
+      "sha256": "052334f521c694c5b84657e2290d0093d56293c6a17c84fd30ad43f9b288e699",
+      "size_bytes": 1582,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/check-kernel-fix.sh",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "demo-rec-start.sh",
+      "git_mode": "100755",
+      "git_blob_oid": "63d31e31fc76d50684affdff73d7bc3af4056a09",
+      "sha256": "6a20171c2ec6a5a07093c1e9547449fd17bf5db5a37946eb5690b8c9b3a69a8e",
+      "size_bytes": 4838,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/demo-rec-start.sh",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "demo-rec-stop.sh",
+      "git_mode": "100755",
+      "git_blob_oid": "2944e074ac666e0b37521c35a99a819366ddaf25",
+      "sha256": "0c3f2533fcb8565f8c5ae081e5b28801c5df2c46d791e832376f34d4a2219fd8",
+      "size_bytes": 1163,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/demo-rec-stop.sh",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "install.sh",
+      "git_mode": "100755",
+      "git_blob_oid": "4e41110ca50e14fd56ac1ff8fa3c199e45516f2f",
+      "sha256": "694cec4a0ad418940f73d429d80136dafd066ba2e4724308404f6c9a9e38d559",
+      "size_bytes": 31811,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/install.sh",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "launch-athena-397b.sh",
+      "git_mode": "100755",
+      "git_blob_oid": "a0082442efe7e555a0ab30fa9cb34fe1f475d051",
+      "sha256": "1129cfadc06627018c3aa8fe31ab2fe1c68fee172b481207d31b3f6f4157cc86",
+      "size_bytes": 83755,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/launch-athena-397b.sh",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "models/.gitkeep",
+      "git_mode": "100644",
+      "git_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/models/.gitkeep",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "models/emotion2vec-reexport.py",
+      "git_mode": "100755",
+      "git_blob_oid": "cc03109f93c6503f5bd82dcf3d6268df869ceef7",
+      "sha256": "caf2ac77e13d198cdc56bcc6759563c5f66477148ec70d1e51c2c3cfde15da6d",
+      "size_bytes": 6066,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/models/emotion2vec-reexport.py",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "orpheus/CMakeLists.txt",
+      "git_mode": "100755",
+      "git_blob_oid": "56adbddd78363bd56050e1cffbcfe6c573a65b6f",
+      "sha256": "f3913787f8263e2b523724c2eb8fba9b7d91c8a83d5d3cca32a0d0268a76e216",
+      "size_bytes": 1463,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/orpheus/CMakeLists.txt",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "orpheus/orpheus-speak.cpp",
+      "git_mode": "100755",
+      "git_blob_oid": "dec79f3ef42f93df83266bdfb33ba5b5099bc63c",
+      "sha256": "2502b681ea089438c72b250e7b196e247ce4deb23eaf16043da5985ec2503c6e",
+      "size_bytes": 131882,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/orpheus/orpheus-speak.cpp",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "patches/talk-llama/CMakeLists.txt",
+      "git_mode": "100755",
+      "git_blob_oid": "bc4f288bbc08f5cc1591d97e85354da5b2b8f7ab",
+      "sha256": "d05b51ac34e68493ea58aeba7f51852381dd61edcdb6bb997956f0f8015ad4dc",
+      "size_bytes": 3895,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/patches/talk-llama/CMakeLists.txt",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "patches/talk-llama/athena_memory.h",
+      "git_mode": "100755",
+      "git_blob_oid": "4dec60d85bf94d60fa0c1119e3e6ef42930c3891",
+      "sha256": "551fd22fc814759ab318b2a6f34a054b3768fd272011b750a3b12a8c74361c2e",
+      "size_bytes": 31877,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/patches/talk-llama/athena_memory.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "patches/talk-llama/silero-endpointer.h",
+      "git_mode": "100755",
+      "git_blob_oid": "658efbe433588fecc0e63ce825d820f747d9df3d",
+      "sha256": "cf38d6f80ff675ebe2a5189722e823ed18b86923a63c7186672c0d2d71ec86a8",
+      "size_bytes": 9395,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/patches/talk-llama/silero-endpointer.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "patches/talk-llama/silero-turn-state.h",
+      "git_mode": "100755",
+      "git_blob_oid": "fa53034df8a5532561c4fe32b6843d1e0df60c05",
+      "sha256": "1c24b55048c91e8a4600cbc812885191347484ed49207dc03cee153f575bb9f8",
+      "size_bytes": 7088,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/patches/talk-llama/silero-turn-state.h",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "patches/talk-llama/talk-llama.cpp",
+      "git_mode": "100755",
+      "git_blob_oid": "202665e167d62ec78880929d6ce334be233ab850",
+      "sha256": "4274802e9cb26242cd7f0cfadb5fadb05bd9aca89152f179033ab110bd600fa8",
+      "size_bytes": 230837,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/patches/talk-llama/talk-llama.cpp",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "speak-daemon.sh",
+      "git_mode": "100755",
+      "git_blob_oid": "76fa7ba3f54bdf4ffd78cff978661a497aab7c75",
+      "sha256": "009451367425d035a42678bdfcfce90958a7fac58b84023f26f6304b431f5970",
+      "size_bytes": 3024,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/speak-daemon.sh",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "zzz-athena-gsp-diag.conf",
+      "git_mode": "100755",
+      "git_blob_oid": "918d592d2e2e241b75cef1be4e3dba66b79e7749",
+      "sha256": "b4c18393c187e27a6c183cdacecec255030d4e54ac0311976a03da4f6ff5f0be",
+      "size_bytes": 1014,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/zzz-athena-gsp-diag.conf",
+      "ownership": "project file; may include upstream-derived portions"
+    },
+    {
+      "repository": "stock",
+      "revision": "e747c0362c4e1c3b95756a57154d09b8df7811ce",
+      "path": "zzz-nvidia-athena-gsp-stability.conf",
+      "git_mode": "100755",
+      "git_blob_oid": "ec3fba17f1c8f08af9d7a70a3ed187d4c37b337f",
+      "sha256": "0063037f1318a8b2361f97387a5209485e93507134e991bcdcc94c4127fa150f",
+      "size_bytes": 3954,
+      "url": "https://github.com/igorbarshteyn/athena/blob/e747c0362c4e1c3b95756a57154d09b8df7811ce/zzz-nvidia-athena-gsp-stability.conf",
+      "ownership": "project file; may include upstream-derived portions"
+    }
+  ],
+  "bundled_mtmd_comparison": [
+    {
+      "path": "clip-graph.h",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "clip-impl.h",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "clip-model.h",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "clip.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "clip.h",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "debug/mtmd-debug.h",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/cogvlm.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/conformer.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/deepseekocr.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/dotsocr.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/gemma4a.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/gemma4v.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/glm4v.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/granite-speech.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/hunyuanocr.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/internvl.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/kimik25.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/kimivl.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/llama4.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/llava.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/mimovl.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/minicpmv.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/mobilenetv5.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/models.h",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/nemotron-v2-vl.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/paddleocr.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/pixtral.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/qwen2vl.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/qwen3a.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/qwen3vl.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/siglip.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/step3vl.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/whisper-enc.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/yasa2.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "models/youtuvl.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "mtmd-audio.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "mtmd-audio.h",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "mtmd-helper.cpp",
+      "origin_exists": true,
+      "exact_match": false
+    },
+    {
+      "path": "mtmd-helper.h",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "mtmd-image.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "mtmd-image.h",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "mtmd.cpp",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "mtmd.h",
+      "origin_exists": true,
+      "exact_match": true
+    },
+    {
+      "path": "vendor/miniaudio/miniaudio.h",
+      "origin_exists": false,
+      "exact_match": false
+    },
+    {
+      "path": "vendor/stb/stb_image.h",
+      "origin_exists": false,
+      "exact_match": false
+    }
+  ],
+  "brain_llama_comparison": [
+    {
+      "path": "llama-adapter.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-adapter.h",
+      "same": true
+    },
+    {
+      "path": "llama-arch.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-arch.h",
+      "same": true
+    },
+    {
+      "path": "llama-batch.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-batch.h",
+      "same": true
+    },
+    {
+      "path": "llama-chat.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-chat.h",
+      "same": true
+    },
+    {
+      "path": "llama-context.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-context.h",
+      "same": true
+    },
+    {
+      "path": "llama-cparams.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-cparams.h",
+      "same": true
+    },
+    {
+      "path": "llama-ext.h",
+      "same": true
+    },
+    {
+      "path": "llama-grammar.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-grammar.h",
+      "same": true
+    },
+    {
+      "path": "llama-graph.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-graph.h",
+      "same": true
+    },
+    {
+      "path": "llama-hparams.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-hparams.h",
+      "same": true
+    },
+    {
+      "path": "llama-impl.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-impl.h",
+      "same": true
+    },
+    {
+      "path": "llama-io.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-io.h",
+      "same": true
+    },
+    {
+      "path": "llama-kv-cache-iswa.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-kv-cache-iswa.h",
+      "same": true
+    },
+    {
+      "path": "llama-kv-cache.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-kv-cache.h",
+      "same": true
+    },
+    {
+      "path": "llama-kv-cells.h",
+      "same": true
+    },
+    {
+      "path": "llama-memory-hybrid-iswa.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-memory-hybrid-iswa.h",
+      "same": true
+    },
+    {
+      "path": "llama-memory-hybrid.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-memory-hybrid.h",
+      "same": true
+    },
+    {
+      "path": "llama-memory-recurrent.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-memory-recurrent.h",
+      "same": true
+    },
+    {
+      "path": "llama-memory.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-memory.h",
+      "same": true
+    },
+    {
+      "path": "llama-mmap.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-mmap.h",
+      "same": true
+    },
+    {
+      "path": "llama-model-loader.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-model-loader.h",
+      "same": true
+    },
+    {
+      "path": "llama-model-saver.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-model-saver.h",
+      "same": true
+    },
+    {
+      "path": "llama-model.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-model.h",
+      "same": true
+    },
+    {
+      "path": "llama-quant.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-quant.h",
+      "same": true
+    },
+    {
+      "path": "llama-sampler.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-sampler.h",
+      "same": true
+    },
+    {
+      "path": "llama-vocab.cpp",
+      "same": true
+    },
+    {
+      "path": "llama-vocab.h",
+      "same": true
+    },
+    {
+      "path": "llama.cpp",
+      "same": true
+    },
+    {
+      "path": "llama.h",
+      "same": true
+    },
+    {
+      "path": "unicode-data.cpp",
+      "same": true
+    },
+    {
+      "path": "unicode-data.h",
+      "same": true
+    },
+    {
+      "path": "unicode.cpp",
+      "same": false
+    },
+    {
+      "path": "unicode.h",
+      "same": true
+    }
+  ]
+}

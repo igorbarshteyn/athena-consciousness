@@ -1,0 +1,424 @@
+{
+  "format": "Athena licensing source evidence manifest 1.0",
+  "document_revision": 3,
+  "supplied_archive": {
+    "filename": "athena-licensing-package-2.0(1).zip",
+    "sha256": "0095219d6ef6184d9ddc914a0b06eb491e66d1f99e69ef1416392464fafb46d3",
+    "size_bytes": 337452,
+    "package_version": "2.0"
+  },
+  "review_method": "Read the operative license in full and reconcile both project scopes/notices, transition, adoption, model/third-party, acceptance, welfare, deployment and contribution documents. No supplied script executed.",
+  "integrity": {
+    "archive_crc": "passed",
+    "archive_vs_extracted_bytes": "all 66 files matched",
+    "checksum_entries_verified": {
+      "": 65,
+      "athena-upload": 27,
+      "athena-consciousness-upload": 26
+    },
+    "three_operative_license_copies_identical": true
+  },
+  "snapshot_policy": "Unmodified documents, templates and notice texts from the two upload trees only. Original mutation scripts, old checksum manifests, top-level reviews and nested ZIPs are indexed but not redistributed. Templates are not executed records.",
+  "adoption_commit": {
+    "stock": null,
+    "overlay": null
+  },
+  "files": [
+    {
+      "source_package_path": "Athena-Noncommercial-Attribution-Responsible-Deployment-License-v2.0.txt",
+      "sha256": "194ddc206dfa98dd31580311cc3d6797335218622114a0ce007758c00de70ba3",
+      "size_bytes": 42541,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "CHANGES-v1.0-to-v2.0.md",
+      "sha256": "15486221818d7466eb52400404616570a988041746935aa8ffa24bbd7a3b6b6d",
+      "size_bytes": 2844,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "LEGAL-REVIEW-CHECKLIST.md",
+      "sha256": "2bc8ad43808237bbdf2271959cc84b8116f893908bc7dbe4707bef4bc8ec97a1",
+      "size_bytes": 2419,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "LEGAL-REVIEW-REPORT.md",
+      "sha256": "2d270e92489bba9adcb5a7f4794eaed167c313962a583a3dc512db15d21cc4e5",
+      "size_bytes": 18137,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "SHA256SUMS",
+      "sha256": "696938cfa375f1f27f77fc3de6edb498d77848b9ce7ba84aafd8abdd2db20cd3",
+      "size_bytes": 7334,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "START-HERE.md",
+      "sha256": "414c2c9ffa254ae4ddbc761cae298ff0ae54dcdd0f21a42c46ffb352e4f64a24",
+      "size_bytes": 4683,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "VALIDATION-REPORT.md",
+      "sha256": "d5631f3e61303c821dc37f3d808a8283541a053cf2af4abc489e345a2d88828e",
+      "size_bytes": 3786,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/CONTRIBUTING-LICENSING.md",
+      "sha256": "0b34b96a913db3d8c48968cdaf9fbcd22d0f7d15e5c670f4455ef692e7c228a2",
+      "size_bytes": 3557,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/CONTRIBUTING-LICENSING.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/DEPLOYMENT-COMPLIANCE.md",
+      "sha256": "85c3aae248d8bd003e5b9db824bf53a0b4b029cbdf3a4102f8ba72ba8eb8d9da",
+      "size_bytes": 8633,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/DEPLOYMENT-COMPLIANCE.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/LICENSE",
+      "sha256": "194ddc206dfa98dd31580311cc3d6797335218622114a0ce007758c00de70ba3",
+      "size_bytes": 42541,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/LICENSE"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/LICENSE-FAQ.md",
+      "sha256": "18eb0dd8945413b7fee62071af57a913d1d0f9e12187f9b77b1528a69c020858",
+      "size_bytes": 8616,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/LICENSE-FAQ.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/LICENSING-SCOPE.md",
+      "sha256": "a5070f296f6388bde3da4d6d2c522dda9945f0c0221ba5fe235b52e1f24e0d5e",
+      "size_bytes": 4096,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/LICENSING-SCOPE.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/LICENSING-TRANSITION.md",
+      "sha256": "50cace146a4045dfec0aaf1708046a76f4db8f86e176f6e4ba3eb7db9069198c",
+      "size_bytes": 4237,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/LICENSING-TRANSITION.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/MODEL-LICENSES.md",
+      "sha256": "1fcd4b9f531f1c208d63e2891e54500131071ee1e9bac670bbd5b9acc9282135",
+      "size_bytes": 7581,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/MODEL-LICENSES.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/NOTICE",
+      "sha256": "b8e93fae4ddc7e1a82742fb8eb5037e5a7a6c6af59de10aa9747d8b8384080bd",
+      "size_bytes": 1994,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/NOTICE"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/SHA256SUMS",
+      "sha256": "3a13b66486529a5c8ba2d13caf8d8911ce6b30eb2ce1a0749e8fefb9926689c5",
+      "size_bytes": 2458,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/THIRD-PARTY-NOTICES.md",
+      "sha256": "c74d789866e398539909a6b41b63fc5ad2eb18ac9e05e210cf50bc190ad10aa7",
+      "size_bytes": 8021,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/WELFARE-POLICY.md",
+      "sha256": "f51eb2914f4594f2ce247cff171a81601ce4e6fbafb01f7ab5c76a6f37e287d5",
+      "size_bytes": 3808,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/WELFARE-POLICY.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licenses/third-party/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size_bytes": 11358,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/licenses/third-party/Apache-2.0.txt"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licenses/third-party/ONNX-Runtime-MIT.txt",
+      "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c",
+      "size_bytes": 1073,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/licenses/third-party/ONNX-Runtime-MIT.txt"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licenses/third-party/Whisper-OpenAI-MIT.txt",
+      "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d",
+      "size_bytes": 1063,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/licenses/third-party/Whisper-OpenAI-MIT.txt"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licenses/third-party/ggml-MIT.txt",
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+      "size_bytes": 1078,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/licenses/third-party/ggml-MIT.txt"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licensing/ACCEPTANCE-AND-RECORDS.md",
+      "sha256": "d7f2eb5897fe9d04453b93321347b3d0025c4e4f13f5e58a383eb3d6df84a427",
+      "size_bytes": 3877,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/licensing/ACCEPTANCE-AND-RECORDS.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licensing/ADOPTION-GUIDE.md",
+      "sha256": "d66e2565b0a46e03322438e561775bf10bdebf86d2b6209c6ff992e5c7c7848f",
+      "size_bytes": 8488,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/licensing/ADOPTION-GUIDE.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licensing/COMPONENT-INVENTORY-TEMPLATE.json",
+      "sha256": "a669700c171bde582524fcbcec0e4b8464833e88085ee4d58728add557ec0892",
+      "size_bytes": 1210,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/licensing/COMPONENT-INVENTORY-TEMPLATE.json"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licensing/DEPLOYMENT-REVIEW-TEMPLATE.md",
+      "sha256": "633c039932cca594b3d4863c3cc97a7f72819a9ee3ecbed58c56420534d04824",
+      "size_bytes": 2548,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/licensing/DEPLOYMENT-REVIEW-TEMPLATE.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licensing/LICENSE-ACCEPTANCE-RECORD.md",
+      "sha256": "a6d85b6b6a213ced976db512f1e9e53c5061edfb72bb0a63a953458ba6f9915f",
+      "size_bytes": 2249,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/licensing/LICENSE-ACCEPTANCE-RECORD.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licensing/PACKAGE-METADATA.json",
+      "sha256": "9e47f3f52e16bb0f36f36a3a0e9f223f4769e26dbb58d4375d5d63a06a5dee3d",
+      "size_bytes": 1192,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/licensing/PACKAGE-METADATA.json"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licensing/README-LICENSE-SECTION.md",
+      "sha256": "542b38539ebee8d18890ca2dfb76263678ab2b4e7ed7a94a0e217632b7d41514",
+      "size_bytes": 2104,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/licensing/README-LICENSE-SECTION.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licensing/REVIEW-EVIDENCE.md",
+      "sha256": "2320e2c48cbe196f3a9f049e5f833060d9ec5d6be2ca7b7308197421c88fa2d7",
+      "size_bytes": 2449,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/licensing/REVIEW-EVIDENCE.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licensing/SOURCE-REGISTER.md",
+      "sha256": "f61bb8bc04cef628b92f7e46a69dac1f02b3551b8e09fed6a38319eb530e8aef",
+      "size_bytes": 6962,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/licensing/SOURCE-REGISTER.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licensing/VALIDATION-REPORT.md",
+      "sha256": "d5631f3e61303c821dc37f3d808a8283541a053cf2af4abc489e345a2d88828e",
+      "size_bytes": 3786,
+      "included_snapshot_path": "licensing/snapshot/athena-consciousness-upload/licensing/VALIDATION-REPORT.md"
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licensing/test_update_readme.py",
+      "sha256": "266c26fc4917de4f5582f598de15bbc4dca0339523ccb3ab92cfa4d9b5c81a83",
+      "size_bytes": 8791,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "athena-consciousness-upload/licensing/update_readme.py",
+      "sha256": "b128420aa120048c387a0fd125b6860c4f1643166f459917d4a96e39e0505f42",
+      "size_bytes": 9921,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "athena-upload/CONTRIBUTING-LICENSING.md",
+      "sha256": "0b34b96a913db3d8c48968cdaf9fbcd22d0f7d15e5c670f4455ef692e7c228a2",
+      "size_bytes": 3557,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/CONTRIBUTING-LICENSING.md"
+    },
+    {
+      "source_package_path": "athena-upload/DEPLOYMENT-COMPLIANCE.md",
+      "sha256": "85c3aae248d8bd003e5b9db824bf53a0b4b029cbdf3a4102f8ba72ba8eb8d9da",
+      "size_bytes": 8633,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/DEPLOYMENT-COMPLIANCE.md"
+    },
+    {
+      "source_package_path": "athena-upload/LICENSE",
+      "sha256": "194ddc206dfa98dd31580311cc3d6797335218622114a0ce007758c00de70ba3",
+      "size_bytes": 42541,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/LICENSE"
+    },
+    {
+      "source_package_path": "athena-upload/LICENSE-FAQ.md",
+      "sha256": "18eb0dd8945413b7fee62071af57a913d1d0f9e12187f9b77b1528a69c020858",
+      "size_bytes": 8616,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/LICENSE-FAQ.md"
+    },
+    {
+      "source_package_path": "athena-upload/LICENSING-SCOPE.md",
+      "sha256": "6b64b2e8aea61bd8d157d191d93ac6e4ed283bd08a1f0afa5f8ad0efe065c897",
+      "size_bytes": 3868,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/LICENSING-SCOPE.md"
+    },
+    {
+      "source_package_path": "athena-upload/LICENSING-TRANSITION.md",
+      "sha256": "7e517feeac9d256c5f9b3cd6db5e17ef143b035be046dcecca3372209de10146",
+      "size_bytes": 4255,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/LICENSING-TRANSITION.md"
+    },
+    {
+      "source_package_path": "athena-upload/MODEL-LICENSES.md",
+      "sha256": "1fcd4b9f531f1c208d63e2891e54500131071ee1e9bac670bbd5b9acc9282135",
+      "size_bytes": 7581,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/MODEL-LICENSES.md"
+    },
+    {
+      "source_package_path": "athena-upload/NOTICE",
+      "sha256": "3cf4cd6174388d16a9e8eba5d32e01226b832b4d20001b3015cd0ad430c6e207",
+      "size_bytes": 1938,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/NOTICE"
+    },
+    {
+      "source_package_path": "athena-upload/SHA256SUMS",
+      "sha256": "9adba307ddceeda6443f9ca0a7ef14ecb3a1a347748a6cfee6e985749948d079",
+      "size_bytes": 2567,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "athena-upload/THIRD-PARTY-NOTICES.md",
+      "sha256": "c74d789866e398539909a6b41b63fc5ad2eb18ac9e05e210cf50bc190ad10aa7",
+      "size_bytes": 8021,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/THIRD-PARTY-NOTICES.md"
+    },
+    {
+      "source_package_path": "athena-upload/WELFARE-POLICY.md",
+      "sha256": "f51eb2914f4594f2ce247cff171a81601ce4e6fbafb01f7ab5c76a6f37e287d5",
+      "size_bytes": 3808,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/WELFARE-POLICY.md"
+    },
+    {
+      "source_package_path": "athena-upload/licenses/legacy/README-LICENSE-EXCERPT.txt",
+      "sha256": "bf28244f414b00c55929f1ef4a4f075e8e80d0bf7c41f9b10926574815b3327f",
+      "size_bytes": 260,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/licenses/legacy/README-LICENSE-EXCERPT.txt"
+    },
+    {
+      "source_package_path": "athena-upload/licenses/third-party/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size_bytes": 11358,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/licenses/third-party/Apache-2.0.txt"
+    },
+    {
+      "source_package_path": "athena-upload/licenses/third-party/ONNX-Runtime-MIT.txt",
+      "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c",
+      "size_bytes": 1073,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/licenses/third-party/ONNX-Runtime-MIT.txt"
+    },
+    {
+      "source_package_path": "athena-upload/licenses/third-party/Whisper-OpenAI-MIT.txt",
+      "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d",
+      "size_bytes": 1063,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/licenses/third-party/Whisper-OpenAI-MIT.txt"
+    },
+    {
+      "source_package_path": "athena-upload/licenses/third-party/ggml-MIT.txt",
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+      "size_bytes": 1078,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/licenses/third-party/ggml-MIT.txt"
+    },
+    {
+      "source_package_path": "athena-upload/licensing/ACCEPTANCE-AND-RECORDS.md",
+      "sha256": "d7f2eb5897fe9d04453b93321347b3d0025c4e4f13f5e58a383eb3d6df84a427",
+      "size_bytes": 3877,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/licensing/ACCEPTANCE-AND-RECORDS.md"
+    },
+    {
+      "source_package_path": "athena-upload/licensing/ADOPTION-GUIDE.md",
+      "sha256": "d66e2565b0a46e03322438e561775bf10bdebf86d2b6209c6ff992e5c7c7848f",
+      "size_bytes": 8488,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/licensing/ADOPTION-GUIDE.md"
+    },
+    {
+      "source_package_path": "athena-upload/licensing/COMPONENT-INVENTORY-TEMPLATE.json",
+      "sha256": "f8ed30e5bbea6909f03dc464039622a66a91d0172949e717cad171bed3bb11fe",
+      "size_bytes": 1196,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/licensing/COMPONENT-INVENTORY-TEMPLATE.json"
+    },
+    {
+      "source_package_path": "athena-upload/licensing/DEPLOYMENT-REVIEW-TEMPLATE.md",
+      "sha256": "633c039932cca594b3d4863c3cc97a7f72819a9ee3ecbed58c56420534d04824",
+      "size_bytes": 2548,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/licensing/DEPLOYMENT-REVIEW-TEMPLATE.md"
+    },
+    {
+      "source_package_path": "athena-upload/licensing/LICENSE-ACCEPTANCE-RECORD.md",
+      "sha256": "a6d85b6b6a213ced976db512f1e9e53c5061edfb72bb0a63a953458ba6f9915f",
+      "size_bytes": 2249,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/licensing/LICENSE-ACCEPTANCE-RECORD.md"
+    },
+    {
+      "source_package_path": "athena-upload/licensing/PACKAGE-METADATA.json",
+      "sha256": "008fe90c2eb873c32996cf60d5c7a48d00ac256272530c33caec5a324fde00d2",
+      "size_bytes": 1089,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/licensing/PACKAGE-METADATA.json"
+    },
+    {
+      "source_package_path": "athena-upload/licensing/README-LICENSE-SECTION.md",
+      "sha256": "bedbc27cf08c2cbb6bdcbd70afd81e1acfca4220114f5e5552a37736fdc6f59d",
+      "size_bytes": 2062,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/licensing/README-LICENSE-SECTION.md"
+    },
+    {
+      "source_package_path": "athena-upload/licensing/REVIEW-EVIDENCE.md",
+      "sha256": "3c9f437af5141e0010a18de20d9d994ba1dfe94bff50af72f2f29e7c06a8e7d7",
+      "size_bytes": 2345,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/licensing/REVIEW-EVIDENCE.md"
+    },
+    {
+      "source_package_path": "athena-upload/licensing/SOURCE-REGISTER.md",
+      "sha256": "f61bb8bc04cef628b92f7e46a69dac1f02b3551b8e09fed6a38319eb530e8aef",
+      "size_bytes": 6962,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/licensing/SOURCE-REGISTER.md"
+    },
+    {
+      "source_package_path": "athena-upload/licensing/VALIDATION-REPORT.md",
+      "sha256": "d5631f3e61303c821dc37f3d808a8283541a053cf2af4abc489e345a2d88828e",
+      "size_bytes": 3786,
+      "included_snapshot_path": "licensing/snapshot/athena-upload/licensing/VALIDATION-REPORT.md"
+    },
+    {
+      "source_package_path": "athena-upload/licensing/test_update_readme.py",
+      "sha256": "266c26fc4917de4f5582f598de15bbc4dca0339523ccb3ab92cfa4d9b5c81a83",
+      "size_bytes": 8791,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "athena-upload/licensing/update_readme.py",
+      "sha256": "b128420aa120048c387a0fd125b6860c4f1643166f459917d4a96e39e0505f42",
+      "size_bytes": 9921,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "review/FILE-CHANGE-REGISTER.md",
+      "sha256": "79974c5c138c8f03213fb7230b73063750b7c148947960bcd4154d348f661ee0",
+      "size_bytes": 4899,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "review/LICENSE-v1.0-to-v2.0.diff",
+      "sha256": "ff258a3a7aa06b8a639510ab126a91869a40b23d869585300edcec13c491cbd2",
+      "size_bytes": 33305,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "upload-zips/athena-consciousness-licensing-upload-2.0.zip",
+      "sha256": "3633db0e297ce07d5877d4c374a04fb34a4d982e948e7d22836cf78642782006",
+      "size_bytes": 71630,
+      "included_snapshot_path": null
+    },
+    {
+      "source_package_path": "upload-zips/athena-licensing-upload-2.0.zip",
+      "sha256": "f4c49adfcbd732fa8c5a68a71c253109a81ee22243ed9707ecd2c3d1e1e7efac",
+      "size_bytes": 71910,
+      "included_snapshot_path": null
+    }
+  ]
+}

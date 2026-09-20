@@ -1,0 +1,2948 @@
+{
+  "$schema": "./schema/athena-graph-1.0.schema.json",
+  "format": "Athena AIBOM graph companion",
+  "format_version": "1.0",
+  "header": {
+    "document_id": "athena-r26.1-aibom",
+    "revision": 3,
+    "system": "Athena R26.1",
+    "graph_type": "reference-runtime-system-with-build-and-lineage-context",
+    "prepared_on": "2026-09-19",
+    "generation_method": "AI-assisted manual analysis of exact source snapshots and primary publisher records, with deterministic hashing and validation",
+    "prepared_by": "OpenAI Codex, at Igor Barshteyn's request",
+    "responsible_maintainer": "Igor Barshteyn",
+    "maintainer_review": "not-recorded",
+    "approval": "not-recorded",
+    "completeness": "partial",
+    "validity": "Current overlay source at the projector-installer update with unchanged tested stock baseline; supplied licensing package 2.0 retains its earlier reviewed source identifiers. Installed artifacts, license adoption and deployment compliance are not attested.",
+    "deployment_observation": "none",
+    "source_revisions": {
+      "overlay": {
+        "repository": "https://github.com/igorbarshteyn/athena-consciousness",
+        "commit": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c"
+      },
+      "stock": {
+        "repository": "https://github.com/igorbarshteyn/athena",
+        "commit": "e747c0362c4e1c3b95756a57154d09b8df7811ce"
+      },
+      "whisper": {
+        "repository": "https://github.com/ggml-org/whisper.cpp",
+        "commit": "afa2ea544fb4b0448916b4a31ecd33c8685bd482"
+      },
+      "llama-origin": {
+        "repository": "https://github.com/ggml-org/llama.cpp",
+        "commit": "3e037f313c2c4cfce897d9be8f43954283a61de1"
+      }
+    },
+    "scope": {
+      "included": "R26.1 overlay, tested stock base, declared reference native runtime, seven model roles, first-level dependencies, mutable data categories, permissions and conditional flows.",
+      "excluded": "Actual installed binaries/weights/configuration, private memory/image/log contents, full transitive OS/build closure, supplier training internals, unconfigured alternate models/services, and subjective-consciousness/compliance judgments."
+    },
+    "views": {
+      "declared": "source/configuration and supplier descriptions",
+      "reachable": "statically described native actions conditional on config/permissions; not an exhaustive reachability proof",
+      "observed": "none"
+    },
+    "encoding": {
+      "inventory": "CycloneDX 1.7",
+      "graph": "Athena project companion schema 1.0; not CycloneDX 2.0",
+      "reason": "The guide anticipates CycloneDX 2.0 blueprints. Published current specification remains 1.7 as reviewed."
+    },
+    "updated_on": "2026-09-19",
+    "licensing": {
+      "file": "license-mapping.json",
+      "custom_identifier": "LicenseRef-Athena-NCARD-2.0",
+      "package_version": "2.0",
+      "adoption_commit": {
+        "stock": null,
+        "overlay": null
+      },
+      "status": "supplied-declaration; not-verified-repository-adoption",
+      "evidence_refs": [
+        "E60",
+        "E61",
+        "E62",
+        "E81",
+        "E82"
+      ]
+    },
+    "source_update": {
+      "file": "source-update.json",
+      "previous_overlay_commit": "f779a98246d4a8cf69c2bbf6e905a1439fefd0f3",
+      "current_overlay_commit": "b3c6e54ead4976c043cd0fca9452bd07d7e2689c",
+      "native_runtime_source_changed": false
+    }
+  },
+  "nodes": [
+    {
+      "id": "C-overlay",
+      "bom_ref": "C-overlay",
+      "name": "Athena consciousness source overlay",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E01",
+        "E24",
+        "E62",
+        "E64",
+        "E66",
+        "E68",
+        "E86"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "C-stock",
+      "bom_ref": "C-stock",
+      "name": "Stock Athena source",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E23",
+        "E61",
+        "E63",
+        "E65",
+        "E67"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "C-brain",
+      "bom_ref": "C-brain",
+      "name": "whisper-talk-llama (Athena modified)",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E07",
+        "E04",
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "C-mind",
+      "bom_ref": "C-mind",
+      "name": "Native consciousness and initiative controller",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E08",
+        "E14",
+        "E15",
+        "E16",
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "C-inner",
+      "bom_ref": "C-inner",
+      "name": "Private reflection and dream worker",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E07",
+        "E09",
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "C-memory",
+      "bom_ref": "C-memory",
+      "name": "Source-aware memory and continuity",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E10",
+        "E17",
+        "E19",
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "C-vision",
+      "bom_ref": "C-vision",
+      "name": "Camera, image recall and retention integration",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E11",
+        "E18",
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "C-prosody",
+      "bom_ref": "C-prosody",
+      "name": "Speech delivery and prosody integration",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E07",
+        "E12",
+        "E13",
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "C-speech",
+      "bom_ref": "C-speech",
+      "name": "orpheus-speak (Athena native application)",
+      "zone": "Z-tts",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E12",
+        "E05",
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "C-launch",
+      "bom_ref": "C-launch",
+      "name": "Reference supervised launcher",
+      "zone": "Z-admin",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E03",
+        "E24",
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "C-calibrate",
+      "bom_ref": "C-calibrate",
+      "name": "athena-emotion-calibrate",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E21",
+        "E04",
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "C-export",
+      "bom_ref": "C-export",
+      "name": "emotion2vec ONNX export recipe",
+      "zone": "Z-build",
+      "membership": "constituent",
+      "role": "build-only",
+      "evidence_refs": [
+        "E06",
+        "E02",
+        "E61",
+        "E63",
+        "E65",
+        "E67"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "P-prompts",
+      "bom_ref": "P-prompts",
+      "name": "Compiled prompt and policy templates",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E07",
+        "E08",
+        "E10",
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "P-config",
+      "bom_ref": "P-config",
+      "name": "Reference launch and feature configuration",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E01",
+        "E03",
+        "E14",
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "P-wire",
+      "bom_ref": "P-wire",
+      "name": "Native speech protocol definitions",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E13",
+        "E62",
+        "E64",
+        "E66",
+        "E68"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-whisper",
+      "bom_ref": "S-whisper",
+      "name": "whisper.cpp",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E04",
+        "E27",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-llama-brain",
+      "bom_ref": "S-llama-brain",
+      "name": "llama.cpp copy inside Whisper talk-llama",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E04",
+        "E07",
+        "E27",
+        "E28",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-ggml",
+      "bom_ref": "S-ggml",
+      "name": "ggml in pinned whisper.cpp",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E04",
+        "E27",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-mtmd",
+      "bom_ref": "S-mtmd",
+      "name": "libmtmd / CLIP vision source",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E04",
+        "E28",
+        "E66",
+        "E72",
+        "E71"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-stb",
+      "bom_ref": "S-stb",
+      "name": "stb_image",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E25",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-miniaudio",
+      "bom_ref": "S-miniaudio",
+      "name": "miniaudio (mtmd bundled header)",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "bundled-source",
+      "evidence_refs": [
+        "E26",
+        "E04",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-llama-server",
+      "bom_ref": "S-llama-server",
+      "name": "llama-server (separate checkout)",
+      "zone": "Z-tts",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E03",
+        "E28",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-ort",
+      "bom_ref": "S-ort",
+      "name": "ONNX Runtime native GPU distribution",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E04",
+        "E05",
+        "E41",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-curl",
+      "bom_ref": "S-curl",
+      "name": "libcurl",
+      "zone": "Z-tts",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E05",
+        "E12",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-sdl",
+      "bom_ref": "S-sdl",
+      "name": "SDL2",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E04",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-ffmpeg",
+      "bom_ref": "S-ffmpeg",
+      "name": "FFmpeg",
+      "zone": "Z-host",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E11",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-fswebcam",
+      "bom_ref": "S-fswebcam",
+      "name": "fswebcam",
+      "zone": "Z-host",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E11",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-aplay",
+      "bom_ref": "S-aplay",
+      "name": "ALSA aplay / alsa-utils",
+      "zone": "Z-host",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E03",
+        "E12",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-posix",
+      "bom_ref": "S-posix",
+      "name": "POSIX / C++ runtime and system libraries",
+      "zone": "Z-host",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E04",
+        "E05",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-cmake",
+      "bom_ref": "S-cmake",
+      "name": "CMake",
+      "zone": "Z-build",
+      "membership": "constituent",
+      "role": "build-only",
+      "evidence_refs": [
+        "E02",
+        "E04",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-compiler",
+      "bom_ref": "S-compiler",
+      "name": "C++17 compiler and native build tools",
+      "zone": "Z-build",
+      "membership": "constituent",
+      "role": "build-only",
+      "evidence_refs": [
+        "E02",
+        "E04",
+        "E05",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-shell",
+      "bom_ref": "S-shell",
+      "name": "Bash, Git and GNU/Linux utilities",
+      "zone": "Z-host",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E01",
+        "E02",
+        "E03",
+        "E71",
+        "E72",
+        "E24"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-cuda",
+      "bom_ref": "S-cuda",
+      "name": "NVIDIA CUDA toolkit/runtime",
+      "zone": "Z-host",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E23",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-cudnn",
+      "bom_ref": "S-cudnn",
+      "name": "NVIDIA cuDNN",
+      "zone": "Z-host",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E23",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-driver",
+      "bom_ref": "S-driver",
+      "name": "NVIDIA driver",
+      "zone": "Z-host",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E23",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-os",
+      "bom_ref": "S-os",
+      "name": "Ubuntu Linux reference environment",
+      "zone": "Z-host",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E23",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "B-python",
+      "bom_ref": "B-python",
+      "name": "Python 3",
+      "zone": "Z-build",
+      "membership": "constituent",
+      "role": "build-only",
+      "evidence_refs": [
+        "E06",
+        "E02",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "B-funasr",
+      "bom_ref": "B-funasr",
+      "name": "FunASR",
+      "zone": "Z-build",
+      "membership": "constituent",
+      "role": "build-only",
+      "evidence_refs": [
+        "E06",
+        "E02",
+        "E33",
+        "E34",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "B-torch",
+      "bom_ref": "B-torch",
+      "name": "PyTorch",
+      "zone": "Z-build",
+      "membership": "constituent",
+      "role": "build-only",
+      "evidence_refs": [
+        "E06",
+        "E02",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "B-torchaudio",
+      "bom_ref": "B-torchaudio",
+      "name": "TorchAudio",
+      "zone": "Z-build",
+      "membership": "constituent",
+      "role": "build-only",
+      "evidence_refs": [
+        "E06",
+        "E02",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "B-modelscope",
+      "bom_ref": "B-modelscope",
+      "name": "ModelScope",
+      "zone": "Z-build",
+      "membership": "constituent",
+      "role": "build-only",
+      "evidence_refs": [
+        "E06",
+        "E02",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "B-onnx",
+      "bom_ref": "B-onnx",
+      "name": "ONNX",
+      "zone": "Z-build",
+      "membership": "constituent",
+      "role": "build-only",
+      "evidence_refs": [
+        "E06",
+        "E02",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "B-ort",
+      "bom_ref": "B-ort",
+      "name": "ONNX Runtime Python package",
+      "zone": "Z-build",
+      "membership": "constituent",
+      "role": "build-only",
+      "evidence_refs": [
+        "E06",
+        "E02",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "B-numpy",
+      "bom_ref": "B-numpy",
+      "name": "NumPy",
+      "zone": "Z-build",
+      "membership": "constituent",
+      "role": "build-only",
+      "evidence_refs": [
+        "E06",
+        "E02",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "B-hf",
+      "bom_ref": "B-hf",
+      "name": "huggingface_hub",
+      "zone": "Z-build",
+      "membership": "constituent",
+      "role": "build-only",
+      "evidence_refs": [
+        "E06",
+        "E02",
+        "E33",
+        "E34",
+        "E71",
+        "E72"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "M-qwen",
+      "bom_ref": "M-qwen",
+      "name": "Qwen3.5-397B-A17B UD-Q3_K_XL (five GGUF shards)",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E03",
+        "E51",
+        "E69",
+        "E70"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "M-projector",
+      "bom_ref": "M-projector",
+      "name": "Qwen3.5-397B-A17B BF16 vision projector (mmproj-BF16.gguf)",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E03",
+        "E51",
+        "E69",
+        "E70",
+        "E01",
+        "E24",
+        "E86",
+        "E87"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "M-whisper",
+      "bom_ref": "M-whisper",
+      "name": "Whisper small.en (GGML conversion)",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E03",
+        "E55",
+        "E69",
+        "E70"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "M-silero",
+      "bom_ref": "M-silero",
+      "name": "Silero VAD v6.2.0 (GGML conversion)",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E03",
+        "E56",
+        "E69",
+        "E70"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "M-orpheus",
+      "bom_ref": "M-orpheus",
+      "name": "Orpheus 3B 0.1 fine-tuned UD-Q4_K_XL",
+      "zone": "Z-tts",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E03",
+        "E53",
+        "E69",
+        "E70"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "M-snac",
+      "bom_ref": "M-snac",
+      "name": "SNAC 24 kHz FP16 ONNX decoder",
+      "zone": "Z-tts",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E03",
+        "E57",
+        "E69",
+        "E70"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "M-emotion",
+      "bom_ref": "M-emotion",
+      "name": "emotion2vec_plus_large local ONNX export",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E02",
+        "E03",
+        "E59",
+        "E69",
+        "E70"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "L-qwen",
+      "bom_ref": "L-qwen",
+      "name": "Qwen3.5-397B-A17B original post-trained model",
+      "zone": "Z-supply",
+      "membership": "external-lineage",
+      "role": "upstream-lineage",
+      "evidence_refs": [
+        "E50",
+        "E69",
+        "E70"
+      ],
+      "status": "publisher-declared"
+    },
+    {
+      "id": "L-whisper",
+      "bom_ref": "L-whisper",
+      "name": "Whisper small.en upstream checkpoint",
+      "zone": "Z-supply",
+      "membership": "external-lineage",
+      "role": "upstream-lineage",
+      "evidence_refs": [
+        "E54",
+        "E37",
+        "E38",
+        "E69",
+        "E70"
+      ],
+      "status": "publisher-declared"
+    },
+    {
+      "id": "L-silero",
+      "bom_ref": "L-silero",
+      "name": "Silero VAD original model",
+      "zone": "Z-supply",
+      "membership": "external-lineage",
+      "role": "upstream-lineage",
+      "evidence_refs": [
+        "E39",
+        "E69",
+        "E70"
+      ],
+      "status": "publisher-declared"
+    },
+    {
+      "id": "L-orpheus-ft",
+      "bom_ref": "L-orpheus-ft",
+      "name": "Canopy Orpheus 3B 0.1 fine-tuned checkpoint",
+      "zone": "Z-supply",
+      "membership": "external-lineage",
+      "role": "upstream-lineage",
+      "evidence_refs": [
+        "E52",
+        "E69",
+        "E70"
+      ],
+      "status": "publisher-declared"
+    },
+    {
+      "id": "L-orpheus-pre",
+      "bom_ref": "L-orpheus-pre",
+      "name": "Canopy Orpheus 3B 0.1 pretrained ancestor",
+      "zone": "Z-supply",
+      "membership": "external-lineage",
+      "role": "upstream-lineage",
+      "evidence_refs": [
+        "E52",
+        "E69",
+        "E70"
+      ],
+      "status": "publisher-declared"
+    },
+    {
+      "id": "L-llama32",
+      "bom_ref": "L-llama32",
+      "name": "Meta Llama 3.2 3B Instruct ancestor",
+      "zone": "Z-supply",
+      "membership": "external-lineage",
+      "role": "upstream-lineage",
+      "evidence_refs": [
+        "E52",
+        "E36",
+        "E69",
+        "E70"
+      ],
+      "status": "publisher-declared"
+    },
+    {
+      "id": "L-snac",
+      "bom_ref": "L-snac",
+      "name": "SNAC 24 kHz original checkpoint",
+      "zone": "Z-supply",
+      "membership": "external-lineage",
+      "role": "upstream-lineage",
+      "evidence_refs": [
+        "E58",
+        "E69",
+        "E70"
+      ],
+      "status": "publisher-declared"
+    },
+    {
+      "id": "L-emotion",
+      "bom_ref": "L-emotion",
+      "name": "emotion2vec+ large publisher checkpoint",
+      "zone": "Z-supply",
+      "membership": "external-lineage",
+      "role": "upstream-lineage",
+      "evidence_refs": [
+        "E59",
+        "E33",
+        "E34",
+        "E35",
+        "E69",
+        "E70"
+      ],
+      "status": "publisher-declared"
+    },
+    {
+      "id": "D-memory",
+      "bom_ref": "D-memory",
+      "name": "Personal and conversational memory",
+      "zone": "Z-storage",
+      "membership": "constituent",
+      "role": "runtime-data",
+      "evidence_refs": [
+        "E10",
+        "E17",
+        "E19",
+        "E61",
+        "E62"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "D-inner",
+      "bom_ref": "D-inner",
+      "name": "Private continuity, dreams and projects",
+      "zone": "Z-storage",
+      "membership": "constituent",
+      "role": "runtime-data",
+      "evidence_refs": [
+        "E08",
+        "E10",
+        "E16",
+        "E17",
+        "E61",
+        "E62"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "D-images",
+      "bom_ref": "D-images",
+      "name": "Retained image album",
+      "zone": "Z-storage",
+      "membership": "constituent",
+      "role": "runtime-data",
+      "evidence_refs": [
+        "E11",
+        "E18",
+        "E61",
+        "E62"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "D-ipc",
+      "bom_ref": "D-ipc",
+      "name": "Speech handoff and receipt files",
+      "zone": "Z-storage",
+      "membership": "constituent",
+      "role": "runtime-data",
+      "evidence_refs": [
+        "E03",
+        "E12",
+        "E13",
+        "E61",
+        "E62"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "D-logs",
+      "bom_ref": "D-logs",
+      "name": "Diagnostics, traces and capture artifacts",
+      "zone": "Z-storage",
+      "membership": "constituent",
+      "role": "runtime-data",
+      "evidence_refs": [
+        "E03",
+        "E07",
+        "E12",
+        "E61",
+        "E62"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "D-context",
+      "bom_ref": "D-context",
+      "name": "Ephemeral inference context and audio/image buffers",
+      "zone": "Z-brain",
+      "membership": "constituent",
+      "role": "runtime-data",
+      "evidence_refs": [
+        "E07",
+        "E09",
+        "E61",
+        "E62"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "D-calibration",
+      "bom_ref": "D-calibration",
+      "name": "Operator calibration observations",
+      "zone": "Z-storage",
+      "membership": "constituent",
+      "role": "runtime-data",
+      "evidence_refs": [
+        "E21",
+        "E20",
+        "E61",
+        "E62"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "D-eval",
+      "bom_ref": "D-eval",
+      "name": "Published release validation claims",
+      "zone": "Z-build",
+      "membership": "constituent",
+      "role": "evaluation-evidence",
+      "evidence_refs": [
+        "E01",
+        "E22",
+        "E61",
+        "E62"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "T-qwen",
+      "bom_ref": "T-qwen",
+      "name": "Qwen upstream training data (undisclosed manifest)",
+      "zone": "Z-supply",
+      "membership": "external-lineage",
+      "role": "upstream-training-data",
+      "evidence_refs": [
+        "E50",
+        "E69",
+        "E70"
+      ],
+      "status": "partial-publisher-disclosure"
+    },
+    {
+      "id": "T-whisper",
+      "bom_ref": "T-whisper",
+      "name": "Whisper upstream speech training collection",
+      "zone": "Z-supply",
+      "membership": "external-lineage",
+      "role": "upstream-training-data",
+      "evidence_refs": [
+        "E37",
+        "E54",
+        "E69",
+        "E70"
+      ],
+      "status": "partial-publisher-disclosure"
+    },
+    {
+      "id": "T-orpheus",
+      "bom_ref": "T-orpheus",
+      "name": "Orpheus upstream training/fine-tuning data",
+      "zone": "Z-supply",
+      "membership": "external-lineage",
+      "role": "upstream-training-data",
+      "evidence_refs": [
+        "E52",
+        "E69",
+        "E70"
+      ],
+      "status": "partial-publisher-disclosure"
+    },
+    {
+      "id": "T-silero",
+      "bom_ref": "T-silero",
+      "name": "Silero upstream training data",
+      "zone": "Z-supply",
+      "membership": "external-lineage",
+      "role": "upstream-training-data",
+      "evidence_refs": [
+        "E39",
+        "E69",
+        "E70"
+      ],
+      "status": "partial-publisher-disclosure"
+    },
+    {
+      "id": "T-snac",
+      "bom_ref": "T-snac",
+      "name": "SNAC upstream speech training data",
+      "zone": "Z-supply",
+      "membership": "external-lineage",
+      "role": "upstream-training-data",
+      "evidence_refs": [
+        "E58",
+        "E69",
+        "E70"
+      ],
+      "status": "partial-publisher-disclosure"
+    },
+    {
+      "id": "T-emotion",
+      "bom_ref": "T-emotion",
+      "name": "emotion2vec upstream pseudo-labeled speech data",
+      "zone": "Z-supply",
+      "membership": "external-lineage",
+      "role": "upstream-training-data",
+      "evidence_refs": [
+        "E59",
+        "E69",
+        "E70"
+      ],
+      "status": "partial-publisher-disclosure"
+    },
+    {
+      "id": "X-mic",
+      "bom_ref": "X-mic",
+      "name": "Microphone / acoustic input",
+      "zone": "Z-room",
+      "membership": "external-interface",
+      "role": "physical-interface",
+      "evidence_refs": [
+        "E03",
+        "E11",
+        "E12"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "X-camera",
+      "bom_ref": "X-camera",
+      "name": "Camera / visual scene",
+      "zone": "Z-room",
+      "membership": "external-interface",
+      "role": "physical-interface",
+      "evidence_refs": [
+        "E03",
+        "E11",
+        "E12"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "X-speaker",
+      "bom_ref": "X-speaker",
+      "name": "Speaker / audio output",
+      "zone": "Z-room",
+      "membership": "external-interface",
+      "role": "physical-interface",
+      "evidence_refs": [
+        "E03",
+        "E11",
+        "E12"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "V-tts",
+      "bom_ref": "V-tts",
+      "name": "Local Orpheus completion endpoint",
+      "zone": "Z-tts",
+      "membership": "constituent",
+      "role": "runtime",
+      "evidence_refs": [
+        "E03",
+        "E12"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "V-hf",
+      "bom_ref": "V-hf",
+      "name": "Hugging Face model distribution",
+      "zone": "Z-supply",
+      "membership": "external-supplier",
+      "role": "build-only",
+      "evidence_refs": [
+        "E02",
+        "E33",
+        "E34",
+        "E24",
+        "E87"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "V-github",
+      "bom_ref": "V-github",
+      "name": "GitHub source and release distribution",
+      "zone": "Z-supply",
+      "membership": "external-supplier",
+      "role": "build-only",
+      "evidence_refs": [
+        "E02",
+        "E24"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "V-pypi",
+      "bom_ref": "V-pypi",
+      "name": "Python package distribution",
+      "zone": "Z-supply",
+      "membership": "external-supplier",
+      "role": "build-only",
+      "evidence_refs": [
+        "E02"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "C-install",
+      "bom_ref": "C-install",
+      "name": "Athena consciousness overlay installer",
+      "zone": "Z-build",
+      "membership": "constituent",
+      "role": "build-only",
+      "evidence_refs": [
+        "E01",
+        "E24",
+        "E62",
+        "E64",
+        "E66",
+        "E68",
+        "E86"
+      ],
+      "status": "source-declared"
+    },
+    {
+      "id": "S-curl-cli",
+      "bom_ref": "S-curl-cli",
+      "name": "curl command-line downloader",
+      "zone": "Z-build",
+      "membership": "constituent",
+      "role": "build-only",
+      "evidence_refs": [
+        "E24",
+        "E86"
+      ],
+      "status": "source-declared"
+    }
+  ],
+  "zones": [
+    {
+      "id": "Z-room",
+      "name": "Physical environment",
+      "control": "operator and bystanders",
+      "note": "Microphone/camera inputs and emitted audio cross into or out of physical surroundings."
+    },
+    {
+      "id": "Z-brain",
+      "name": "Native brain process",
+      "control": "local OS account",
+      "note": "Logical processing zone; native modules share process privileges, not independent security sandboxes."
+    },
+    {
+      "id": "Z-tts",
+      "name": "Local speech processes and loopback",
+      "control": "local OS account",
+      "note": "Separate processes on one host. Loopback binding does not authenticate other local processes."
+    },
+    {
+      "id": "Z-storage",
+      "name": "Local mutable stores and IPC",
+      "control": "local OS/filesystem permissions",
+      "note": "No blanket assertion of encryption, access isolation or automatic deletion."
+    },
+    {
+      "id": "Z-host",
+      "name": "OS, devices and shared runtimes",
+      "control": "host administrator",
+      "note": "Loaded libraries, GPU stack and device permissions are deployment-specific."
+    },
+    {
+      "id": "Z-admin",
+      "name": "Launcher administration",
+      "control": "operator and sudo policy",
+      "note": "Privileged host tuning belongs to launch scripts, not a model-selected arbitrary command tool."
+    },
+    {
+      "id": "Z-build",
+      "name": "Local installation and conversion",
+      "control": "installer/operator",
+      "note": "Optional Python exporter is outside native runtime."
+    },
+    {
+      "id": "Z-supply",
+      "name": "External suppliers and lineage",
+      "control": "upstream publishers",
+      "note": "Downloaded source/models/package metadata; upstream training internals have limited visibility."
+    }
+  ],
+  "boundaries": [
+    {
+      "id": "B01",
+      "zones": [
+        "Z-brain",
+        "Z-room"
+      ],
+      "meaning": "logical trust/context crossing; not evidence of a security sandbox",
+      "flow_refs": [
+        "F01",
+        "F24"
+      ]
+    },
+    {
+      "id": "B02",
+      "zones": [
+        "Z-brain",
+        "Z-storage"
+      ],
+      "meaning": "logical trust/context crossing; not evidence of a security sandbox",
+      "flow_refs": [
+        "F08",
+        "F09",
+        "F21",
+        "F22",
+        "F27",
+        "F28",
+        "F29",
+        "F37",
+        "F38",
+        "F49"
+      ]
+    },
+    {
+      "id": "B03",
+      "zones": [
+        "Z-storage",
+        "Z-tts"
+      ],
+      "meaning": "logical trust/context crossing; not evidence of a security sandbox",
+      "flow_refs": [
+        "F30",
+        "F36",
+        "F39"
+      ]
+    },
+    {
+      "id": "B04",
+      "zones": [
+        "Z-room",
+        "Z-tts"
+      ],
+      "meaning": "logical trust/context crossing; not evidence of a security sandbox",
+      "flow_refs": [
+        "F35"
+      ]
+    },
+    {
+      "id": "B05",
+      "zones": [
+        "Z-admin",
+        "Z-host"
+      ],
+      "meaning": "logical trust/context crossing; not evidence of a security sandbox",
+      "flow_refs": [
+        "F40"
+      ]
+    },
+    {
+      "id": "B06",
+      "zones": [
+        "Z-brain",
+        "Z-supply"
+      ],
+      "meaning": "logical trust/context crossing; not evidence of a security sandbox",
+      "flow_refs": [
+        "F41",
+        "F42",
+        "F43",
+        "F44"
+      ]
+    },
+    {
+      "id": "B07",
+      "zones": [
+        "Z-build",
+        "Z-supply"
+      ],
+      "meaning": "logical trust/context crossing; not evidence of a security sandbox",
+      "flow_refs": [
+        "F45",
+        "F46",
+        "F47",
+        "F50",
+        "F51"
+      ]
+    },
+    {
+      "id": "B08",
+      "zones": [
+        "Z-brain",
+        "Z-build"
+      ],
+      "meaning": "logical trust/context crossing; not evidence of a security sandbox",
+      "flow_refs": [
+        "F48",
+        "F52"
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "id": "F01",
+      "source": "X-mic",
+      "target": "C-brain",
+      "kind": "data",
+      "payload": "Captured audio and timing",
+      "condition": "Listening active and OS audio access available",
+      "protocol": "SDL2 / OS audio",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07",
+        "E03"
+      ],
+      "boundary_refs": [
+        "B01"
+      ]
+    },
+    {
+      "id": "F02",
+      "source": "C-brain",
+      "target": "M-silero",
+      "kind": "data",
+      "payload": "Audio windows",
+      "condition": "Silero selected and model loaded",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07",
+        "E03"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F03",
+      "source": "M-silero",
+      "target": "C-brain",
+      "kind": "data",
+      "payload": "Speech activity scores",
+      "condition": "VAD inference completes",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F04",
+      "source": "C-brain",
+      "target": "M-whisper",
+      "kind": "data",
+      "payload": "Detected utterance audio",
+      "condition": "Native endpoint decides utterance is ready",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F05",
+      "source": "M-whisper",
+      "target": "C-brain",
+      "kind": "data",
+      "payload": "Transcript and token evidence",
+      "condition": "Recognition completes",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F06",
+      "source": "C-brain",
+      "target": "M-emotion",
+      "kind": "data",
+      "payload": "Utterance waveform",
+      "condition": "Optional ONNX build/model available and enabled",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07",
+        "E20"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F07",
+      "source": "M-emotion",
+      "target": "C-brain",
+      "kind": "data",
+      "payload": "Emotion scores",
+      "condition": "Optional inference returns; local calibration/thresholds apply in caller",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E20"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F08",
+      "source": "C-memory",
+      "target": "D-memory",
+      "kind": "data",
+      "payload": "Source records and consolidated projections",
+      "condition": "Memory enabled and accepted writes/consolidation occur",
+      "protocol": "local file I/O",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E10",
+        "E17"
+      ],
+      "boundary_refs": [
+        "B02"
+      ]
+    },
+    {
+      "id": "F09",
+      "source": "D-memory",
+      "target": "C-memory",
+      "kind": "data",
+      "payload": "Retrieved current/historical memories and personality",
+      "condition": "Relevant local records available",
+      "protocol": "local file I/O",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E10"
+      ],
+      "boundary_refs": [
+        "B02"
+      ]
+    },
+    {
+      "id": "F10",
+      "source": "C-memory",
+      "target": "C-brain",
+      "kind": "data",
+      "payload": "Selected memory context",
+      "condition": "Prompt assembly/retrieval requests context",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07",
+        "E10"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F11",
+      "source": "C-brain",
+      "target": "C-memory",
+      "kind": "data",
+      "payload": "Accepted dialogue and source/receipt context",
+      "condition": "Memory extraction or archival is due",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07",
+        "E10"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F12",
+      "source": "P-prompts",
+      "target": "C-brain",
+      "kind": "data",
+      "payload": "Compiled templates and policy text",
+      "condition": "Conversation prompt construction",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07",
+        "E10"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F13",
+      "source": "C-brain",
+      "target": "M-qwen",
+      "kind": "data",
+      "payload": "Assembled text, memory, controller field and optional image embeddings",
+      "condition": "Reply or memory transformation requested",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F14",
+      "source": "M-qwen",
+      "target": "C-brain",
+      "kind": "data",
+      "payload": "Generated text tokens",
+      "condition": "Decode completes or yields partial output",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F15",
+      "source": "C-brain",
+      "target": "C-mind",
+      "kind": "event",
+      "payload": "Accepted input, perception and delivery events",
+      "condition": "Native event hooks fire",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07",
+        "E08"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F16",
+      "source": "C-mind",
+      "target": "C-brain",
+      "kind": "control",
+      "payload": "Controller field, initiative proposals and state reports",
+      "condition": "Source/gate eligibility allows integration",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07",
+        "E08"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F17",
+      "source": "C-mind",
+      "target": "C-inner",
+      "kind": "control",
+      "payload": "Bounded private thought/dream seed",
+      "condition": "Quiet/away windows and existing controller budgets allow work",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E08",
+        "E09"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F18",
+      "source": "C-inner",
+      "target": "M-qwen",
+      "kind": "data",
+      "payload": "Private inference prompt in separate context",
+      "condition": "Worker permitted; shared decode serialized with main context",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07",
+        "E09"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F19",
+      "source": "M-qwen",
+      "target": "C-inner",
+      "kind": "data",
+      "payload": "Private generated candidate",
+      "condition": "Inner decode returns",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07",
+        "E09"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F20",
+      "source": "C-inner",
+      "target": "C-mind",
+      "kind": "data",
+      "payload": "Accepted completed thought/dream result",
+      "condition": "Epoch/ownership and content gates accept it",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E08",
+        "E09"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F21",
+      "source": "C-mind",
+      "target": "D-inner",
+      "kind": "data",
+      "payload": "Private/project/dream/continuity records",
+      "condition": "Accepted product or project event is persisted",
+      "protocol": "local file I/O",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E08",
+        "E16",
+        "E17"
+      ],
+      "boundary_refs": [
+        "B02"
+      ]
+    },
+    {
+      "id": "F22",
+      "source": "D-inner",
+      "target": "C-mind",
+      "kind": "data",
+      "payload": "Prior source-aware continuity and project state",
+      "condition": "Startup or relevant retrieval",
+      "protocol": "local file I/O",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E08",
+        "E16"
+      ],
+      "boundary_refs": [
+        "B02"
+      ]
+    },
+    {
+      "id": "F23",
+      "source": "C-brain",
+      "target": "C-vision",
+      "kind": "control",
+      "payload": "Capture/recall/keep proposal with current permission state",
+      "condition": "User request or eligible initiative reaches native dispatch",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07",
+        "E11"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F24",
+      "source": "X-camera",
+      "target": "C-vision",
+      "kind": "data",
+      "payload": "Camera frame through temporary image file",
+      "condition": "Vision model/backend present, permission valid, budget/gates pass",
+      "protocol": "V4L2 via ffmpeg/fswebcam",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E11"
+      ],
+      "boundary_refs": [
+        "B01"
+      ]
+    },
+    {
+      "id": "F25",
+      "source": "C-vision",
+      "target": "M-projector",
+      "kind": "data",
+      "payload": "Selected frame or recalled image",
+      "condition": "Image encoding permitted and artifact compatible",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07",
+        "E11"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F26",
+      "source": "M-projector",
+      "target": "C-brain",
+      "kind": "data",
+      "payload": "Image embeddings plus image identity",
+      "condition": "Encoding succeeds and source remains eligible",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07",
+        "E11"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F27",
+      "source": "C-vision",
+      "target": "D-images",
+      "kind": "data",
+      "payload": "Image bytes and descriptive/source record",
+      "condition": "Separate retention authorization and transaction succeed",
+      "protocol": "local file I/O",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E11",
+        "E18"
+      ],
+      "boundary_refs": [
+        "B02"
+      ]
+    },
+    {
+      "id": "F28",
+      "source": "D-images",
+      "target": "C-vision",
+      "kind": "data",
+      "payload": "Prior kept image and provenance",
+      "condition": "Recall requested and available within limits",
+      "protocol": "local file I/O",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E11",
+        "E18"
+      ],
+      "boundary_refs": [
+        "B02"
+      ]
+    },
+    {
+      "id": "F29",
+      "source": "C-brain",
+      "target": "D-ipc",
+      "kind": "message",
+      "payload": "Text chunks, prosody/control and session/stop messages",
+      "condition": "Speech scheduled or interrupted",
+      "protocol": "native file IPC",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07",
+        "E13"
+      ],
+      "boundary_refs": [
+        "B02"
+      ]
+    },
+    {
+      "id": "F30",
+      "source": "D-ipc",
+      "target": "C-speech",
+      "kind": "message",
+      "payload": "Speech work and control messages",
+      "condition": "Watch/control reader accepts matching session",
+      "protocol": "native file IPC",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E12",
+        "E13"
+      ],
+      "boundary_refs": [
+        "B03"
+      ]
+    },
+    {
+      "id": "F31",
+      "source": "C-speech",
+      "target": "V-tts",
+      "kind": "data",
+      "payload": "Text and voice/prosody prompt",
+      "condition": "Speech generation requested",
+      "protocol": "HTTP POST over loopback",
+      "phase": "runtime",
+      "encryption": "none in reference configuration",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E12"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F32",
+      "source": "V-tts",
+      "target": "C-speech",
+      "kind": "data",
+      "payload": "Orpheus audio-token stream",
+      "condition": "Completion endpoint responds",
+      "protocol": "HTTP / SSE over loopback",
+      "phase": "runtime",
+      "encryption": "none in reference configuration",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E12"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F33",
+      "source": "C-speech",
+      "target": "M-snac",
+      "kind": "data",
+      "payload": "Parsed audio-token/code arrays",
+      "condition": "Enough audio codes collected",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E12"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F34",
+      "source": "M-snac",
+      "target": "C-speech",
+      "kind": "data",
+      "payload": "Decoded 24 kHz PCM",
+      "condition": "ONNX CPU/CUDA decoder completes",
+      "protocol": "in-process",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E12"
+      ],
+      "boundary_refs": []
+    },
+    {
+      "id": "F35",
+      "source": "C-speech",
+      "target": "X-speaker",
+      "kind": "data",
+      "payload": "Generated PCM/audio",
+      "condition": "Playback subprocess accepts output",
+      "protocol": "aplay / ALSA",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E12",
+        "E03"
+      ],
+      "boundary_refs": [
+        "B04"
+      ]
+    },
+    {
+      "id": "F36",
+      "source": "C-speech",
+      "target": "D-ipc",
+      "kind": "event",
+      "payload": "Delivered/partial/terminal receipts",
+      "condition": "Playback/session state produces a receipt",
+      "protocol": "native file IPC",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E12",
+        "E13"
+      ],
+      "boundary_refs": [
+        "B03"
+      ]
+    },
+    {
+      "id": "F37",
+      "source": "D-ipc",
+      "target": "C-brain",
+      "kind": "event",
+      "payload": "Observed speech receipts",
+      "condition": "Session and source checks accept receipt",
+      "protocol": "native file IPC",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E07",
+        "E13"
+      ],
+      "boundary_refs": [
+        "B02"
+      ]
+    },
+    {
+      "id": "F38",
+      "source": "C-brain",
+      "target": "D-logs",
+      "kind": "data",
+      "payload": "Diagnostics, optional prompts and trace records",
+      "condition": "Respective logging/trace options enabled",
+      "protocol": "local file I/O",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E03",
+        "E07"
+      ],
+      "boundary_refs": [
+        "B02"
+      ]
+    },
+    {
+      "id": "F39",
+      "source": "C-speech",
+      "target": "D-logs",
+      "kind": "data",
+      "payload": "Speech logs and optional tokens/WAV captures",
+      "condition": "Diagnostics/capture enabled",
+      "protocol": "local file I/O",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E03",
+        "E12"
+      ],
+      "boundary_refs": [
+        "B03"
+      ]
+    },
+    {
+      "id": "F40",
+      "source": "C-launch",
+      "target": "S-driver",
+      "kind": "control",
+      "payload": "GPU/MPS configuration and process supervision",
+      "condition": "Optional launcher and operator host permissions allow action",
+      "protocol": "local utilities / optional sudo",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E03"
+      ],
+      "boundary_refs": [
+        "B05"
+      ]
+    },
+    {
+      "id": "F41",
+      "source": "C-stock",
+      "target": "V-hf",
+      "kind": "data",
+      "payload": "Artifact requests and request metadata",
+      "condition": "Stock model download or optional exporter acquisition",
+      "protocol": "HTTPS",
+      "phase": "build",
+      "encryption": "TLS transport; endpoints/mirrors require deployment confirmation",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E02",
+        "E34"
+      ],
+      "boundary_refs": [
+        "B06"
+      ]
+    },
+    {
+      "id": "F42",
+      "source": "V-hf",
+      "target": "C-stock",
+      "kind": "data",
+      "payload": "Downloaded model artifacts",
+      "condition": "Requested reference artifacts resolve",
+      "protocol": "HTTPS",
+      "phase": "build",
+      "encryption": "TLS transport; no artifact signature asserted",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E02"
+      ],
+      "boundary_refs": [
+        "B06"
+      ]
+    },
+    {
+      "id": "F43",
+      "source": "C-stock",
+      "target": "V-github",
+      "kind": "data",
+      "payload": "Source/release requests",
+      "condition": "Initial dependency installation",
+      "protocol": "HTTPS / Git",
+      "phase": "build",
+      "encryption": "HTTPS transport",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E02"
+      ],
+      "boundary_refs": [
+        "B06"
+      ]
+    },
+    {
+      "id": "F44",
+      "source": "V-github",
+      "target": "C-stock",
+      "kind": "data",
+      "payload": "Source checkout and ONNX Runtime archive",
+      "condition": "Initial dependency installation",
+      "protocol": "HTTPS / Git",
+      "phase": "build",
+      "encryption": "HTTPS transport",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E02"
+      ],
+      "boundary_refs": [
+        "B06"
+      ]
+    },
+    {
+      "id": "F45",
+      "source": "C-export",
+      "target": "V-pypi",
+      "kind": "data",
+      "payload": "Package requests and request metadata",
+      "condition": "Optional pip installation through configured index",
+      "protocol": "HTTPS by default",
+      "phase": "build",
+      "encryption": "deployment/index dependent",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E02"
+      ],
+      "boundary_refs": [
+        "B07"
+      ]
+    },
+    {
+      "id": "F46",
+      "source": "V-pypi",
+      "target": "C-export",
+      "kind": "data",
+      "payload": "Python packages and transitive dependencies",
+      "condition": "Optional export environment provisioned",
+      "protocol": "HTTPS by default",
+      "phase": "build",
+      "encryption": "deployment/index dependent",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E02"
+      ],
+      "boundary_refs": [
+        "B07"
+      ]
+    },
+    {
+      "id": "F47",
+      "source": "L-emotion",
+      "target": "C-export",
+      "kind": "data",
+      "payload": "Resolved checkpoint and model configuration",
+      "condition": "Optional conversion loads resolved upstream checkpoint",
+      "protocol": "local files after hub acquisition",
+      "phase": "build",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E06",
+        "E33",
+        "E34"
+      ],
+      "boundary_refs": [
+        "B07"
+      ]
+    },
+    {
+      "id": "F48",
+      "source": "C-export",
+      "target": "M-emotion",
+      "kind": "data",
+      "payload": "Locally exported ONNX model",
+      "condition": "A conversion strategy passes script checks; actual run not supplied",
+      "protocol": "local file output",
+      "phase": "build",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E06"
+      ],
+      "boundary_refs": [
+        "B08"
+      ]
+    },
+    {
+      "id": "F49",
+      "source": "C-calibrate",
+      "target": "D-calibration",
+      "kind": "data",
+      "payload": "Calibration observations/measurements",
+      "condition": "Operator runs optional native calibration",
+      "protocol": "local I/O",
+      "phase": "runtime",
+      "encryption": "not-applicable",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E21"
+      ],
+      "boundary_refs": [
+        "B02"
+      ]
+    },
+    {
+      "id": "F50",
+      "source": "C-install",
+      "target": "V-hf",
+      "kind": "data",
+      "payload": "Pinned projector HTTPS request and request metadata; optional byte-range resume request",
+      "condition": "Operator full install or --vision-model-only; missing/incomplete projector, not skipped and not dry-run/check/source-only",
+      "protocol": "curl HTTPS with HTTPS-only redirects",
+      "phase": "build",
+      "encryption": "TLS; configured local TLS/proxy environment not observed",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E01",
+        "E24",
+        "E87"
+      ],
+      "boundary_refs": [
+        "B07"
+      ]
+    },
+    {
+      "id": "F51",
+      "source": "V-hf",
+      "target": "C-install",
+      "kind": "data",
+      "payload": "Projector bytes to hash-specific local .part file",
+      "condition": "Download/resume requested; incomplete or failed partial retained for operator-managed retry",
+      "protocol": "curl HTTPS with HTTPS-only redirects",
+      "phase": "build",
+      "encryption": "TLS plus required exact size and SHA-256 before publication; no publisher signature asserted",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E01",
+        "E24",
+        "E87"
+      ],
+      "boundary_refs": [
+        "B07"
+      ]
+    },
+    {
+      "id": "F52",
+      "source": "C-install",
+      "target": "M-projector",
+      "kind": "data",
+      "payload": "Verified projector published at models/mmproj-BF16.gguf, or matching existing file verified and reused",
+      "condition": "Expected size and SHA-256 match; no-clobber same-filesystem hard-link publication for a new file; mismatched existing destination refused",
+      "protocol": "local filesystem verification/publication",
+      "phase": "build",
+      "encryption": "not-applicable; local access permissions apply",
+      "observation": "declared-possible; not runtime-observed",
+      "evidence_refs": [
+        "E01",
+        "E24",
+        "E87"
+      ],
+      "boundary_refs": [
+        "B08"
+      ]
+    }
+  ],
+  "behaviors": [
+    {
+      "id": "A01",
+      "actor_ref": "C-mind",
+      "role": "native controller / scheduler",
+      "model_refs": [],
+      "triggers": "Native events and default 10 Hz controller tick; environment can override tick rate.",
+      "actions": [
+        "speech proposal",
+        "private inference request",
+        "bounded project work",
+        "camera/recall proposals"
+      ],
+      "permissions": "Native implementation dispatches eligible actions; proposals do not create camera or retention permission.",
+      "limits": "Sustained is default in mode_setting; legacy/shadow are alternatives. Existing gates, elapsed-time pacing and human-first arbitration apply.",
+      "evidence_refs": [
+        "E08",
+        "E15"
+      ]
+    },
+    {
+      "id": "A02",
+      "actor_ref": "C-inner",
+      "role": "private model worker",
+      "model_refs": [
+        "M-qwen"
+      ],
+      "triggers": "Permitted quiet windows; dream eligibility after configured idle/absence threshold.",
+      "actions": [
+        "private reflection",
+        "dream generation",
+        "accepted continuation"
+      ],
+      "permissions": "No independent shell/network authority; results return through controller product gates.",
+      "limits": "Shared decode mutex, bounded prompt/generation, cancellation/epoch ownership. Default dream threshold 1800 s; README example sets 420 s.",
+      "evidence_refs": [
+        "E07",
+        "E08",
+        "E09",
+        "E01"
+      ]
+    },
+    {
+      "id": "A03",
+      "actor_ref": "C-vision",
+      "role": "native camera/recall tool",
+      "model_refs": [
+        "M-projector",
+        "M-qwen"
+      ],
+      "triggers": "Eligible explicit request or controller initiative.",
+      "actions": [
+        "capture one image",
+        "recall retained image",
+        "keep authorized image"
+      ],
+      "permissions": "Camera grants, revocation and image-retention permissions evaluated in native code; OS camera access also required.",
+      "limits": "Reference launcher --look-max 15 and --recall-max 6; 20 s capture deadline by default. Feature overrides can alter behavior.",
+      "evidence_refs": [
+        "E03",
+        "E11",
+        "E18"
+      ]
+    },
+    {
+      "id": "A04",
+      "actor_ref": "C-memory",
+      "role": "local memory and consolidation tool",
+      "model_refs": [
+        "M-qwen"
+      ],
+      "triggers": "Accepted conversations, relevant recall, rolling/exit consolidation.",
+      "actions": [
+        "read context",
+        "append/archive sources",
+        "update projections and continuity records"
+      ],
+      "permissions": "Filesystem access as runtime OS user; source/ownership checks are application logic.",
+      "limits": "Reference --memory-words 2048; bounded retrieval and source-preserving transformations. No embedding server or vector database declared.",
+      "evidence_refs": [
+        "E03",
+        "E07",
+        "E10",
+        "E17"
+      ]
+    },
+    {
+      "id": "A05",
+      "actor_ref": "C-speech",
+      "role": "speech production tool",
+      "model_refs": [
+        "M-orpheus",
+        "M-snac"
+      ],
+      "triggers": "Accepted speech work in native file protocol.",
+      "actions": [
+        "local HTTP/SSE completion",
+        "PCM decode",
+        "audio playback",
+        "delivery receipt"
+      ],
+      "permissions": "Loopback endpoint, IPC directory and playback-device rights of local user; native client --api and --play are operator configuration.",
+      "limits": "Cancellation/partial delivery retained; HTTP paths use explicit 120/300 s timeouts. No per-user API key or provider quota in local reference endpoint.",
+      "evidence_refs": [
+        "E12",
+        "E13"
+      ]
+    },
+    {
+      "id": "A06",
+      "actor_ref": "C-launch",
+      "role": "operator-run supervisor",
+      "model_refs": [],
+      "triggers": "Operator starts optional reference launcher.",
+      "actions": [
+        "start/stop/watch processes",
+        "host/GPU tuning",
+        "diagnostic capture"
+      ],
+      "permissions": "OS account and configured sudo authority; separate from model action selection.",
+      "limits": "Local configuration and recovery policies; not a general-purpose model-controlled command execution agent.",
+      "evidence_refs": [
+        "E03",
+        "E24"
+      ]
+    },
+    {
+      "id": "A07",
+      "actor_ref": "C-install",
+      "role": "operator-run build/install acquisition; not autonomous runtime behavior",
+      "model_refs": [
+        "M-projector"
+      ],
+      "triggers": "Normal full install or explicit --vision-model-only; --skip-vision-model disables default acquisition/checks.",
+      "actions": [
+        "verify and reuse a matching existing file",
+        "download/resume the pinned projector if needed",
+        "verify exact size and SHA-256",
+        "publish without overwriting a concurrently created destination"
+      ],
+      "permissions": "Operator filesystem/network authority; no sudo, camera activation, camera permission grant or automatic retained-launcher replacement.",
+      "limits": "Source-only/check/dry-run modes do not download. --check verifies by default; --check-sources and --skip-build do not inspect weights. Hash-specific partial, symlink and partial hard-link checks, HTTPS-only redirects. Model/partial files are outside source rollback.",
+      "evidence_refs": [
+        "E01",
+        "E24",
+        "E86",
+        "E87"
+      ]
+    }
+  ],
+  "lineage": [
+    {
+      "id": "L01",
+      "artifact_ref": "M-qwen",
+      "ancestor_ref": "L-qwen",
+      "relationship": "converted-or-derived-from",
+      "evidence_refs": [
+        "E02",
+        "E03",
+        "E51"
+      ],
+      "claim_status": "publisher/source-declared; local bytes not verified"
+    },
+    {
+      "id": "L02",
+      "artifact_ref": "M-projector",
+      "ancestor_ref": "L-qwen",
+      "relationship": "installer-pinned-compatible-projector-distribution",
+      "evidence_refs": [
+        "E03",
+        "E24",
+        "E51",
+        "E87"
+      ],
+      "claim_status": "Reference artifact and acquisition established from source/publisher pointer; exact exporter training lineage and local installation remain unverified"
+    },
+    {
+      "id": "L03",
+      "artifact_ref": "M-whisper",
+      "ancestor_ref": "L-whisper",
+      "relationship": "converted-or-derived-from",
+      "evidence_refs": [
+        "E02",
+        "E03",
+        "E55"
+      ],
+      "claim_status": "publisher/source-declared; local bytes not verified"
+    },
+    {
+      "id": "L04",
+      "artifact_ref": "M-silero",
+      "ancestor_ref": "L-silero",
+      "relationship": "converted-or-derived-from",
+      "evidence_refs": [
+        "E02",
+        "E03",
+        "E56"
+      ],
+      "claim_status": "publisher/source-declared; local bytes not verified"
+    },
+    {
+      "id": "L05",
+      "artifact_ref": "M-orpheus",
+      "ancestor_ref": "L-orpheus-ft",
+      "relationship": "converted-or-derived-from",
+      "evidence_refs": [
+        "E02",
+        "E03",
+        "E53"
+      ],
+      "claim_status": "publisher/source-declared; local bytes not verified"
+    },
+    {
+      "id": "L06",
+      "artifact_ref": "M-snac",
+      "ancestor_ref": "L-snac",
+      "relationship": "converted-or-derived-from",
+      "evidence_refs": [
+        "E02",
+        "E03",
+        "E57"
+      ],
+      "claim_status": "publisher/source-declared; local bytes not verified"
+    },
+    {
+      "id": "L07",
+      "artifact_ref": "M-emotion",
+      "ancestor_ref": "L-emotion",
+      "relationship": "converted-or-derived-from",
+      "evidence_refs": [
+        "E02",
+        "E03",
+        "E59"
+      ],
+      "claim_status": "publisher/source-declared; local bytes not verified"
+    },
+    {
+      "id": "L08",
+      "artifact_ref": "L-orpheus-ft",
+      "ancestor_ref": "L-orpheus-pre",
+      "relationship": "declared-ancestor",
+      "evidence_refs": [
+        "E52"
+      ],
+      "claim_status": "publisher-declared"
+    },
+    {
+      "id": "L09",
+      "artifact_ref": "L-orpheus-ft",
+      "ancestor_ref": "L-llama32",
+      "relationship": "declared-ancestor",
+      "evidence_refs": [
+        "E52"
+      ],
+      "claim_status": "publisher-declared"
+    }
+  ],
+  "protocols": {
+    "native": [
+      "in-process C++ calls",
+      "file-based speech control/receipt protocol",
+      "HTTP/SSE loopback",
+      "SDL2/ALSA/V4L2"
+    ],
+    "mcp": "No MCP client/server/tool registry declared in reviewed reference runtime; not an assertion about custom deployments.",
+    "a2a": "No A2A Agent Card or protocol declared in reviewed reference runtime.",
+    "hosted_llm": "No hosted conversational LLM API in reviewed reference topology; local llama-server serves TTS."
+  },
+  "gaps": [
+    {
+      "id": "G01",
+      "title": "Installed artifact identity",
+      "status": "open",
+      "finding": "All model weights, binaries and libraries are unobserved on the target machine.",
+      "closure": "Capture local SHA-256, file sizes, active paths, native build IDs and resolved revisions.",
+      "affected_refs": [
+        "M-qwen",
+        "M-projector",
+        "M-whisper",
+        "M-silero",
+        "M-orpheus",
+        "M-snac",
+        "M-emotion",
+        "C-brain",
+        "C-speech"
+      ],
+      "owner": "Maintainer or deploying operator; supplier for undisclosed upstream data"
+    },
+    {
+      "id": "G02",
+      "title": "Unpinned external llama.cpp and package closure",
+      "status": "open",
+      "finding": "TTS llama-server checkout and optional pip environment float; OS/transitive libraries have no lock or installed inventory.",
+      "closure": "Record exact installed commits, package manifest and native linked-library SBOM.",
+      "affected_refs": [
+        "S-llama-server",
+        "C-export",
+        "S-posix"
+      ],
+      "owner": "Maintainer or deploying operator; supplier for undisclosed upstream data"
+    },
+    {
+      "id": "G03",
+      "title": "Projector deployment matching and live integration",
+      "status": "open",
+      "finding": "Missing reference acquisition is resolved: current overlay pins publisher revision, size and SHA-256. Actual installed bytes, active --mmproj selection, custom replacements and live vision behavior remain unobserved.",
+      "closure": "Check the installed file against the pinned size/hash (or independently document a custom artifact), verify the active launcher/model pairing and camera permissions, and retain live target-machine vision evidence.",
+      "affected_refs": [
+        "M-projector",
+        "C-install",
+        "C-launch",
+        "C-vision"
+      ],
+      "owner": "Maintainer or deploying operator; supplier for undisclosed upstream data"
+    },
+    {
+      "id": "G04",
+      "title": "License adoption and historical-rights reconciliation",
+      "status": "open",
+      "finding": "Supplied package 2.0 provides identical operative terms and project-specific notices/scopes for both repositories. Missing-text aspect is resolved; actual adoption commits, historical grants and rights coverage remain unverified. Original commits are pre-adoption snapshots. The newer installer/README commit does not supply root licensing adoption files; supplied v2.0 scope documents still identify the earlier reviewed source.",
+      "closure": "Record each actual authorized adoption commit and reviewed contribution scope; reconcile current README and preserve earlier grants. Do not substitute the pre-adoption commits as adoption identifiers.",
+      "affected_refs": [
+        "C-stock",
+        "C-overlay"
+      ],
+      "owner": "Maintainer or deploying operator; supplier for undisclosed upstream data"
+    },
+    {
+      "id": "G05",
+      "title": "Orpheus license lineage",
+      "status": "open",
+      "finding": "Publisher/quantizer cards label Apache-2.0; those cards name Llama 3.2 ancestry and stock README names community terms. Supplied v2.0 model review reports a maintainer distinction between Apache repository code and Llama-licensed weights; exact checkpoint rights remain unresolved.",
+      "closure": "Resolve the actual checkpoint/quantization license chain; preserve applicable agreement, AUP, Meta notices and Built with Llama display where required. Do not treat Athena v2.0 or an Apache card label as weight clearance.",
+      "affected_refs": [
+        "M-orpheus",
+        "L-orpheus-ft",
+        "L-llama32"
+      ],
+      "owner": "Maintainer or deploying operator; supplier for undisclosed upstream data"
+    },
+    {
+      "id": "G06",
+      "title": "emotion2vec export provenance and rights",
+      "status": "open",
+      "finding": "Alias is mapped by inspected FunASR code, but installed version, exact source checkpoint, export strategy/log and ONNX bytes are missing. Card uses custom model-license.",
+      "closure": "Retain resolved checkpoint/config, custom terms, conversion package lock, export log and produced ONNX digest. Review model attribution/name, scope and revision clauses separately; noncommercial operation is not automatic clearance.",
+      "affected_refs": [
+        "C-export",
+        "M-emotion",
+        "L-emotion"
+      ],
+      "owner": "Maintainer or deploying operator; supplier for undisclosed upstream data"
+    },
+    {
+      "id": "G07",
+      "title": "Training corpus visibility",
+      "status": "open",
+      "finding": "Exact supplier datasets, snapshot hashes, item rights, split/contamination information and training jobs are not available.",
+      "closure": "Request supplier disclosures; retain unknown status where unavailable.",
+      "affected_refs": [
+        "T-qwen",
+        "T-whisper",
+        "T-silero",
+        "T-orpheus",
+        "T-snac",
+        "T-emotion"
+      ],
+      "owner": "Maintainer or deploying operator; supplier for undisclosed upstream data"
+    },
+    {
+      "id": "G08",
+      "title": "Runtime configuration and interaction evidence",
+      "status": "open",
+      "finding": "No active environment, startup feature report, permissions, endpoints or time-bounded trace supplied.",
+      "closure": "Capture a sanitized deployment record and actual interaction evidence before calling this an operational AIBOM.",
+      "affected_refs": [
+        "P-config",
+        "C-mind",
+        "V-tts"
+      ],
+      "owner": "Maintainer or deploying operator; supplier for undisclosed upstream data"
+    },
+    {
+      "id": "G09",
+      "title": "Evaluation evidence",
+      "status": "open",
+      "finding": "Public documents report tests, but raw reports/datasets are absent and target GPU/audio/camera acceptance remains unverified here. Current README reports 34 local projector/installer regression tests and a live publisher download/checksum/reuse test, while explicitly excluding the development tooling from the repository. These maintainer-reported results were not independently reproduced; they are not camera/GPU inference tests.",
+      "closure": "Attach source-bound raw reports and live acceptance results; do not treat upstream benchmark tables as Athena metrics.",
+      "affected_refs": [
+        "D-eval"
+      ],
+      "owner": "Maintainer or deploying operator; supplier for undisclosed upstream data"
+    },
+    {
+      "id": "G10",
+      "title": "Integrity and approval",
+      "status": "open",
+      "finding": "File hashes are present, but no maintainer approval, signature, build attestation or model signature is asserted.",
+      "closure": "Maintainer records review and signs release/attestation with controlled keys if desired.",
+      "affected_refs": [
+        "C-overlay"
+      ],
+      "owner": "Maintainer or deploying operator; supplier for undisclosed upstream data"
+    },
+    {
+      "id": "G11",
+      "title": "Data governance",
+      "status": "open",
+      "finding": "User memory/images/logs, legal bases, retention, filesystem permissions and encryption are deployment-specific and unobserved.",
+      "closure": "Document operator decisions privately; publish only redacted metadata, never personal stores.",
+      "affected_refs": [
+        "D-memory",
+        "D-inner",
+        "D-images",
+        "D-logs"
+      ],
+      "owner": "Maintainer or deploying operator; supplier for undisclosed upstream data"
+    },
+    {
+      "id": "G12",
+      "title": "Whisper license metadata discrepancy",
+      "status": "open",
+      "finding": "Selected GGML distribution declares MIT; original GitHub project uses MIT; Transformers model card labels Apache-2.0.",
+      "closure": "Preserve selected artifact license and source notices; resolve any redistribution of a different format separately.",
+      "affected_refs": [
+        "M-whisper",
+        "L-whisper"
+      ],
+      "owner": "Maintainer or deploying operator; supplier for undisclosed upstream data"
+    },
+    {
+      "id": "G13",
+      "title": "License notice, assent and contracting authority",
+      "status": "open",
+      "finding": "Version 2.0 documents are present; no controlled installer/provisioning acceptance implementation, executed record or institutional authority evidence was supplied.",
+      "closure": "Implement/test conspicuous exact-version assent where section 5.6 applies; retain private text/hash, presentation, time/action and capacity/authority evidence. Guest conversation is not operator assent.",
+      "affected_refs": [
+        "C-stock",
+        "C-overlay",
+        "C-launch"
+      ],
+      "owner": "Maintainer and relevant distributor/operator; qualified counsel where needed"
+    },
+    {
+      "id": "G14",
+      "title": "Actual attribution and installed-tree notice propagation",
+      "status": "open",
+      "finding": "Both project notices are supplied, but their propagation to installed/binary bundles and accessible shared or voice-only credits has not been demonstrated.",
+      "closure": "Verify actual distribution contents, inherited notices, both project credits and accessible attribution; complete release-matched third-party/model notice set for any shipped artifacts.",
+      "affected_refs": [
+        "C-stock",
+        "C-overlay",
+        "C-brain",
+        "C-speech",
+        "S-mtmd"
+      ],
+      "owner": "Maintainer and relevant distributor/operator; qualified counsel where needed"
+    },
+    {
+      "id": "G15",
+      "title": "Use-specific lawful-deployment and welfare controls",
+      "status": "open",
+      "finding": "Documentary obligations under sections 6-8 do not establish implemented safeguards, proportionate testing, user disclosures, legal compliance or subjective consciousness.",
+      "closure": "Record actual audience/locations/purpose, applicable rules and tested controls; keep proportionate research and data-governance evidence private. Suspend affected access where a required prerequisite is absent.",
+      "affected_refs": [
+        "C-mind",
+        "C-inner",
+        "C-vision",
+        "M-emotion",
+        "D-memory",
+        "P-config"
+      ],
+      "owner": "Maintainer and relevant distributor/operator; qualified counsel where needed"
+    },
+    {
+      "id": "G16",
+      "title": "Contribution ownership and historical grant boundaries",
+      "status": "open",
+      "finding": "Neither package supplies a completed line-level title/rights audit, full prior-release/private-archive history or all contributor authority. Repository ownership and filenames are not sufficient.",
+      "closure": "Establish licensor-controlled expression, upstream/earlier permissions and authorized contributor grants; retain specific notices without asserting exclusive rights over whole mixed-origin files.",
+      "affected_refs": [
+        "C-stock",
+        "C-overlay",
+        "C-brain",
+        "C-memory",
+        "S-mtmd"
+      ],
+      "owner": "Maintainer and relevant distributor/operator; qualified counsel where needed"
+    }
+  ]
+}
