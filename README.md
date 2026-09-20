@@ -31,6 +31,8 @@ Historical reports, test workspaces, transcripts, sample memory, release archive
 and development tools are not part of this overlay repository. The changelog is
 a historical record; use this README for installation.
 
+[Athena R26.1 AI Bill of Materials](AIBOM.md)
+
 ## Prerequisites
 
 Use the existing Linux/Bash Athena installation and its working compiler, CMake,
