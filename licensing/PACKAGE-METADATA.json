@@ -1,0 +1,20 @@
+{
+  "package_version": "2.0",
+  "prepared_date": "2026-09-19",
+  "timezone": "Etc/UTC",
+  "repository": "igorbarshteyn/athena-consciousness",
+  "project": "Athena Consciousness",
+  "reviewed_head": "f779a98246d4a8cf69c2bbf6e905a1439fefd0f3",
+  "reviewed_readme_blob": "f8182e818e6cf262bda2261be4b82804460c975c",
+  "custom_license_id": "LicenseRef-Athena-NCARD-2.0",
+  "adoption_rule": "First authorized publication of LICENSE with LICENSING-SCOPE.md; no retroactive withdrawal of independent rights.",
+  "legal_review_completed": false,
+  "inventory_scope": "Targeted repository metadata, README, installer and licensing-source review; not a line-by-line provenance audit.",
+  "legacy_observation": "No project-wide license declaration found in the reviewed current README or root tree; historical grants and inherited material still require review.",
+  "application_source_and_runtime_changes_included": false,
+  "ai_assisted_legal_drafting_review_completed": true,
+  "licensed_counsel_approval_obtained": false,
+  "prior_package_version": "1.0",
+  "license_name": "Athena Noncommercial, Attribution and Responsible Deployment License",
+  "runtime_assent_or_safeguards_implemented": false
+}
